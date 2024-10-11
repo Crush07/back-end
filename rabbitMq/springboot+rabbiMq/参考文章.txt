@@ -1,0 +1,5 @@
+springboot整合rabbitMq实操
+https://cloud.tencent.com/developer/article/2085259 
+
+rabbitMq各个交换器的特点及用法
+https://cloud.baidu.com/article/2919520 
