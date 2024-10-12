@@ -1,0 +1,38 @@
+#更新apt
+sudo apt-get update
+
+#安装一些依赖
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+#为确认下载的软件包合法性，需要添加软件源的GPG密钥
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+#向sources.list添加docker软件源
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+#更新apt
+sudo apt-get update
+
+#安装docker
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+#启动docker
+sudo systemctl enable docker
+
+sudo systemctl start docker
+
+#建立docker组
+sudo groupadd docker
+
+#将当前用户加入docker组
+sudo usermod -aG docker $USER
+
+#确认是否安装成功
+docker version

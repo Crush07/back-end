@@ -1,0 +1,58 @@
+returnCallback 和 confirmCallback 在 RabbitMQ 中都用于消息的反馈处理，但它们有不同的用途和触发场景。让我们分别看看它们的作用：
+
+1. returnCallback 的作用
+returnCallback 用于处理 未能成功路由到队列 的消息。也就是说，当你发布消息到一个交换机，但消息无法路由到任何队列时，returnCallback 会被触发。
+
+触发条件：
+
+消息没有找到任何符合路由键的队列（即消息没有成功路由）。
+mandatory 标志设置为 true（这意味着消息必须要找到一个目标队列，否则会返回给生产者）。
+典型场景： 你发送了一条消息到交换机，但该消息无法根据路由键找到任何匹配的队列。此时，returnCallback 会被调用，通常你可以在回调中处理这些未路由的消息，比如记录日志、重试发送或者做其他处理。
+
+代码示例（Spring AMQP）：
+
+rabbitTemplate.setReturnCallback(new ReturnCallback() {
+    @Override
+    public void returnedMessage(Message message, int replyCode, String replyText,
+                                String exchange, String routingKey) {
+        System.out.println("Returned Message: " + new String(message.getBody()));
+        System.out.println("Reason: " + replyText);
+    }
+});
+这里 returnedMessage 方法会在消息无法路由时被调用，并返回具体的信息，包括消息体、交换机、路由键和失败原因。
+注意：
+
+returnCallback 仅在消息未能路由成功时触发。
+如果消息成功路由到某个队列，它不会被调用。
+2. confirmCallback 的作用
+confirmCallback 用于处理 消息是否成功到达交换机 的确认。也就是说，生产者发送消息到 RabbitMQ 服务器后，会收到一个确认或失败的通知，这就是 confirmCallback 的作用。
+
+触发条件：
+
+RabbitMQ 开启了消息确认模式（publisher confirms）。
+消息成功到达交换机，或者由于某种原因无法到达交换机。
+典型场景： 你需要确保消息成功发送到 RabbitMQ 交换机，并在收到确认后进行后续处理。如果消息没有到达交换机（例如交换机不存在），你也可以在 confirmCallback 中处理失败情况。
+
+代码示例（Spring AMQP）：
+
+rabbitTemplate.setConfirmCallback(new ConfirmCallback() {
+    @Override
+    public void confirm(CorrelationData correlationData, boolean ack, String cause) {
+        if (ack) {
+            System.out.println("Message successfully delivered to the exchange");
+        } else {
+            System.out.println("Message delivery failed: " + cause);
+        }
+    }
+});
+confirm 方法会在消息到达交换机后被调用，其中 ack 表示是否成功到达交换机，cause 表示失败原因。
+注意：
+
+confirmCallback 只确认消息是否到达了交换机，不保证消息是否路由到队列。
+如果消息没有到达交换机，ack 会为 false，并提供失败的原因。
+对比总结：
+returnCallback：用于处理消息成功到达交换机但未能路由到队列的情况。必须设置 mandatory 标志，并且仅在消息未路由时触发。
+
+confirmCallback：用于确认消息是否成功到达交换机，无论消息是否路由成功。RabbitMQ 的消息确认机制（publisher confirms）必须开启。
+
+你可以同时使用这两个回调来确保消息既成功到达了交换机，也成功路由到了正确的队列。

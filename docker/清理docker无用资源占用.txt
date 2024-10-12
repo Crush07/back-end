@@ -1,0 +1,8 @@
+基本用法
+docker system prune
+
+更彻底的清理（包括未被任何容器使用的镜像）
+docker system prune -a
+
+包含数据卷的清理
+docker system prune -a -v
