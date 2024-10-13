@@ -3,3 +3,6 @@ https://cloud.tencent.com/developer/article/2085259
 
 rabbitMq各个交换器的特点及用法
 https://cloud.baidu.com/article/2919520 
+
+关于RabbitMQ重复消费的解决方案
+https://blog.csdn.net/zxwu_1993/article/details/142225121
