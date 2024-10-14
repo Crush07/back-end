@@ -1,11 +1,10 @@
 package com.hysea.producer;
 
-import com.hysea.constant.QueueDestination;
 import com.hysea.constant.TopicDestination;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.jms.Topic;
+import javax.jms.Queue;
 
 /**
  * 队列消息生产者
@@ -13,13 +12,13 @@ import javax.jms.Topic;
  * 用于发送消息到指定的JMS队列
  */
 @Component
-public class TopicProducer {
+public class QueueProducer {
 
-    private final Topic topic;
+    private final Queue queue;
     private final JmsMessagingTemplate jmsMessagingTemplate;
 
-    public TopicProducer(Topic topic,JmsMessagingTemplate jmsMessagingTemplate) {
-        this.topic = topic;
+    public QueueProducer(Queue queue,JmsMessagingTemplate jmsMessagingTemplate) {
+        this.queue = queue;
         this.jmsMessagingTemplate = jmsMessagingTemplate;
     }
 
@@ -30,7 +29,7 @@ public class TopicProducer {
      */
     public void send(String message) {
         // 调用 JmsMessagingTemplate 的 convertAndSend 方法，将消息发送到指定队列。
-        jmsMessagingTemplate.convertAndSend(topic, message);
+        jmsMessagingTemplate.convertAndSend(queue, message);
     }
 
 }

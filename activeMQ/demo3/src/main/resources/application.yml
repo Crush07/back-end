@@ -5,6 +5,6 @@ spring:
     broker-url: tcp://localhost:61616
     user: admin
     password: admin
-  jms:
-    # 默认目标类型是否为主题：true 表示默认目标类型是主题（使用发布/订阅模式），false 表示默认目标类型是队列（使用点对点模式）
-    pub-sub-domain: true
+#  jms:
+#    # 默认目标类型是否为主题：true 表示默认目标类型是主题（使用发布/订阅模式），false 表示默认目标类型是队列（使用点对点模式）
+#    pub-sub-domain: true
