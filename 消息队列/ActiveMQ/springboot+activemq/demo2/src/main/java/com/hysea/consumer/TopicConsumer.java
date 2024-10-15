@@ -8,9 +8,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class TopicConsumer {
 
-    @JmsListener(destination = TopicDestination.TEST_TOPIC_1)
-    private void receive(String message) {
-        System.out.println("队列消费者，接收消息: " + message);
+    @JmsListener(destination = TopicDestination.TEST_TOPIC_1, containerFactory = "jmsListenerContainerTopic")
+    private void receive1(String message) {
+        System.out.println("主题消费者1，接收消息: " + message);
+    }
+
+    @JmsListener(destination = TopicDestination.TEST_TOPIC_1, containerFactory = "jmsListenerContainerTopic")
+    private void receive2(String message) {
+        System.out.println("主题消费者2，接收消息: " + message);
+    }
+
+    @JmsListener(destination = TopicDestination.TEST_TOPIC_1, containerFactory = "jmsListenerContainerTopic")
+    private void receive3(String message) {
+        System.out.println("主题消费者3，接收消息: " + message);
     }
 
 }

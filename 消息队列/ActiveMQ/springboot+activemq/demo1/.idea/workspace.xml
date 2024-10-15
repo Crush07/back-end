@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bf3871-fa61-4617-aee1-7126e15f1db5" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hysea/constant/QueueDestination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hysea/constant/TopicDestination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hysea/consumer/QueueConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hysea/controller/SendMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hysea/producer/QueueProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/consumer/QueueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/producer/QueueProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/config/JmsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/consumer/TopicConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/consumer/TopicConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/controller/SendMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/controller/SendMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/producer/TopicProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/src/main/java/com/hysea/producer/TopicProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo3/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo3/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../rabbitMq/springboot+rabbiMq/demo5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbitMq/springboot+rabbiMq/demo5/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rabbitMq/springboot+rabbiMq/参考文章.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbitMq/springboot+rabbiMq/参考文章.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
