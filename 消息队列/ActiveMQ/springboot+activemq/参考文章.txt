@@ -1,0 +1,7 @@
+springboot整合activeMQ实操
+https://blog.csdn.net/sgx1825192/article/details/139483008
+https://blog.csdn.net/erf_1012/article/details/106563465
+
+ActiveMQ发布/订阅模式
+https://blog.csdn.net/qq_25432245/article/details/85241201
+https://segmentfault.com/a/1190000014563970
