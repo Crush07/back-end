@@ -1,0 +1,5 @@
+https://blog.csdn.net/m0_67830223/article/details/139803036
+
+
+https://www.bilibili.com/video/BV1to4y1C7gw?spm_id_from=333.788.player.switch&vd_source=10ed27d496bca442ee44a60f848adfb8&p=9
+zookeeper 第9节 02:46 [用到xsync集群分发，需要基于hadoop]

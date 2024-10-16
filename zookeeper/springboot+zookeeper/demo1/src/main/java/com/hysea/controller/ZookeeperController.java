@@ -85,7 +85,7 @@ public class ZookeeperController {
         String path = "/" + nodeName;
         zkClient.exists(path, new MyWatcher());
         String d = data;
-        int version = 1;
+        int version = 0;
         Stat stat = null;
 
         try {
