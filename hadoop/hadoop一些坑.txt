@@ -1,0 +1,2 @@
+HaDoop3.0之前web访问端口是50070   hadoop3.0之后web访问端口为9870
+相关文章  https://cloud.tencent.cn/developer/article/1346105

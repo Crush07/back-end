@@ -1,0 +1,1 @@
+jps：列出当前系统中所有的Java进程，显示进程ID和进程名称  https://www.cnblogs.com/gonggy/p/17892704.html

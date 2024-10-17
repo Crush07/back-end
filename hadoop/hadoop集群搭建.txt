@@ -3,3 +3,19 @@ https://blog.csdn.net/m0_67830223/article/details/139803036
 
 https://www.bilibili.com/video/BV1to4y1C7gw?spm_id_from=333.788.player.switch&vd_source=10ed27d496bca442ee44a60f848adfb8&p=9
 zookeeper 第9节 02:46 [用到xsync集群分发，需要基于hadoop]
+
+
+hadoop配置
+https://www.cnblogs.com/liuzijin/p/17591193.html
+https://blog.csdn.net/weixin_70261953/article/details/135139956
+
+安装hadoop
+https://zhuanlan.zhihu.com/p/687929721
+https://blog.csdn.net/i_for/article/details/140854831
+
+设置ssh免密验证
+https://blog.csdn.net/wyp106343873/article/details/141923460
+https://www.cnblogs.com/lavender-pansy/p/14483479.html
+
+如何重启hadoop
+https://blog.51cto.com/u_16213333/11947485
