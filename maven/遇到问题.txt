@@ -1,0 +1,4 @@
+1. 遇到maven引入成功，但是运行却告诉你没有XX函数没有XX类的时候，第一时间要想到引入的依赖版本有问题，如下：
+'reactor.netty.resources.ConnectionProvider reactor.netty.resources.ConnectionProvider.fixed(java.lang.String, int)'
+最终在这篇文章我找到了答案：
+https://segmentfault.com/a/1190000039404986?sort=newest

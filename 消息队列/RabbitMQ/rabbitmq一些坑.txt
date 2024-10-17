@@ -1,0 +1,2 @@
+非localhost的机器guest账号默认情况下登不进
+https://blog.csdn.net/niTaoTaoa/article/details/140441037

@@ -1,0 +1,2 @@
+spring整合rabbitmq
+https://blog.csdn.net/zhongjianboy/article/details/129541324

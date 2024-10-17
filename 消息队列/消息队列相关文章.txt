@@ -1,0 +1,5 @@
+各消息队列历史背景
+https://www.cnblogs.com/arthinking/p/15422958.html
+
+RabbitMQ STOMP插件
+https://blog.csdn.net/Mrxiao_bo/article/details/134958146
