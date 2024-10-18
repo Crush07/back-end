@@ -19,3 +19,6 @@ https://www.cnblogs.com/lavender-pansy/p/14483479.html
 
 如何重启hadoop
 https://blog.51cto.com/u_16213333/11947485
+
+Ubuntu22.04三台虚拟机Hadoop集群安装和搭建（全面详细的过程）
+https://blog.csdn.net/wurobb/article/details/134281489
