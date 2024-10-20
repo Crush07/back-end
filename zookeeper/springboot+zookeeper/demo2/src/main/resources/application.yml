@@ -1,0 +1,6 @@
+server:
+  port: 8081
+zookeeper:
+  server1: VM-16-15-ubuntu:2181
+  server2: hadoop02:2181
+  timeout: 3000
