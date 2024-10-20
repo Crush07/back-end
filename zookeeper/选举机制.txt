@@ -1,0 +1,34 @@
+什么时候触发Leader选举
+服务器初始化启动
+服务器运行期间无法和Leader保持连接
+当一台机器进入Leader选举流程时，当前集群可能出现一下两种情况：
+a.集群本来就有Leader，这种情况下，机器去试图选举Leader时，会被告知当前服务器的Leader信息，对于该机器来说，仅仅需要和Leader建立连接，并进行状态同步即可
+b.集群中不存在Leader，开始进行Leader选举
+
+第一次启动的选举
+
+先根据zoo.cfg获取zookeeper集群共有多少台机器，假设为5台
+
+三种状态：LOOKING（观望中），FOLLOWING（随从），LEADING（领导）
+
+选举规则：
+1. 在没有比自己大的myid机器的情况下会优先投给自己
+2. 在选举时，所有机器都是LOOKING状态，这个状态下可以更改选票，投给比自己myid大的机器
+3. 如果一台机器过半数被投票则变为Leader，其他的LOOKING状态的机器状态变成FOLLOWING，选举结束
+
+按顺序启动myid为：1,2,3,4,5的机器
+
+每一台机器启动zookeeper服务时都是一轮选举
+选举轮数	myid	当前状态
+1		1		1票没有超过3，状态为LOOKING
+2		2		当前myid为1的机器处于LOOKING，所以可以更改选票，发现新机器myid为2，比自己大，就把票都转投给2，加上2自己也投了自己一票，此时票数2没有超过3，状态为LOOKING
+3		3		当前myid为1和2的机器都处于LOOKING，所以可以更改选票，发现新机器myid为3，比自己大，就把票都转投给3，加上3自己也投了自己一票，此时票数3已经超过3，状态为LEADING，其他机器转态变成FOLLOWING，选举结束，新进来的机器都将成为Follower
+4		4		FOLLOWING
+5		5		FOLLOWING
+
+
+非第一次启动的选举
+每台机器有4个id：myid，sid（就是myid），zxid（事务id），epoch（历经几轮朝代）
+选举规则：1. epoch大的直接胜出
+2. epoch相同，zxid大的直接胜出
+3 zxid相同，sid大的直接胜出
