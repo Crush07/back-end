@@ -1,0 +1,7 @@
+server:
+  port: 8081
+zookeeper:
+  #connectString ZK客户端允许将服务器所有地址配置在字符上，注意,两边不可有空格
+  server: VM-16-15-ubuntu:2181,hadoop02:2181
+  timeout: 3000
+zkClient: zk1
