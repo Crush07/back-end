@@ -1,1 +1,11 @@
 https://www.ruanyifeng.com/blog/2019/09/curl-reference.html
+
+
+windows命令行的一个坑：【https://www.cnblogs.com/kelelipeng/p/17129941.html】
+
+Windows命令行直接输入json字符串发送数据
+这里特别要说明的是：Windows下，-d参数后不能使用单引号把发送的json字符串括起来，需要使用双引号。而json内容里的属性的双引号需要做转义：
+curl -X POST http://localhost:8080/api -H "Content-Type: application/json" \
+  -d "{\"p1\":\"xyz\",\"p2\":\"xyz\"}"
+
+
