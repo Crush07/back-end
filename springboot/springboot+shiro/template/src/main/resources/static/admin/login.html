@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link th:href="@{//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link th:href="@{//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/admin/css/style.min.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{//cdn.bootcss.com/limonte-sweetalert2/6.4.1/sweetalert2.min.css}" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>欢迎踏上卷王之路</h2>
+    <form id="loginForm" onsubmit="return checkForm()">
+        <input type="text" id="account" placeholder="请输入账号"/>
+        <input type="password" id="password" />
+        <button type="submit">Send</button>
+    </form>
+    <script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
+    <script th:src="@{//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+    <script th:src="@{//cdn.bootcss.com/limonte-sweetalert2/6.4.1/sweetalert2.min.js}"></script>
+    <script th:src="@{/admin/js/base.js}"></script>
+    <script type="text/javascript">
+    function checkForm() {
+        $.ajax({
+            url: '/login',
+            data: "",
+            method: 'POST',
+<!--            如果没有这个dataType: 'json', result.code就获取不到-->
+            dataType: 'json',
+            success: function (result) {
+                console.log(result)
+                console.log(result.code)
+                if (result && result.code == 'success') {
+                    window.location.href = '/index';
+                } else {
+<!--                    window.location.href = '/index';-->
+<!--                    tale.alertError(result.msg || '登录失败');-->
+                }
+            }
+        });
+        return false;
+    }
+    </script>
+</body>
+</html>
