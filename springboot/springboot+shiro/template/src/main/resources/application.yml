@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  thymeleaf:
+    # 设置Thymeleaf模板文件的前缀位置（默认是`src/main/resources/static`）
+    prefix: classpath:/static/
+    # 设置模板文件的后缀（默认是`.html`）
+    suffix: .html
+    # 设置模板模式（默认是HTML5，Thymeleaf 3中为`HTML`）
+    mode: HTML
+    # 开启模板缓存（开发时建议关闭，生产时开启）
+    cache: false

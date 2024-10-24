@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+    <h2>欢迎踏上卷王之路</h2>
+    <form id="loginForm" th:action="@{/enter/login}">
+        <input type="text" id="account" placeholder="请输入账号"/>
+        <input type="password" id="password" />
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

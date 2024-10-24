@@ -1,2 +1,6 @@
 SpringBoot3学习笔记-集成thymeleaf
 https://zhuanlan.zhihu.com/p/720355870
+
+
+github类似文章
+https://github.com/RameshMF/registration-login-springboot-security-thymeleaf
