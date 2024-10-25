@@ -1,0 +1,11 @@
+类型：		接口
+方法：		onApplicationEvent：		监听到事件后触发的逻辑
+
+
+
+
+
+
+
+
+发现位置：	com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean

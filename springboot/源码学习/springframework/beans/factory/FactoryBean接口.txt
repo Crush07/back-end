@@ -1,0 +1,11 @@
+类型：		接口
+函数：		getObject：		返回bean对象，待实现
+			getObjectType：	返回bean对象的Class对象，待实现
+			isSingleton：		返回是否是单例，可以重写
+		
+
+
+
+
+
+发现位置：	com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean

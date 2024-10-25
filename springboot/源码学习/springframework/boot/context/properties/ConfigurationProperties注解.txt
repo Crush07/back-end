@@ -1,0 +1,9 @@
+类型：		注解
+参数：		prefix：		配置项前缀		
+
+
+
+
+
+发现位置：	com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties
+参考文章：	ConfigurationProperties注解详解	https://blog.csdn.net/doublepg13/article/details/128563455

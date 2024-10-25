@@ -1,0 +1,10 @@
+类型：		接口
+函数：		afterPropertiesSet：		bean属性设置完后执行的逻辑
+		
+
+
+
+
+
+发现位置：	com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean
+参考文章：	@PostConstruct可以替代InitializingBean  		https://blog.csdn.net/weixin_44823875/article/details/141203287
