@@ -1,0 +1,7 @@
+类型：		抽象类
+函数：		execute：		传入RedisCallback（redis回调函数式接口）给RedisTemplate调用execute方法，返回redis处理的结果
+
+
+
+
+发现位置：	org.springframework.data.redis.core.DefaultZSetOperations

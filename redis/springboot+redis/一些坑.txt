@@ -1,0 +1,2 @@
+使用redis存放键值对时，发现存放的key多了 \xac\xed\x00\x05t\x00的前缀。
+https://blog.csdn.net/weixin_42115825/article/details/136049011

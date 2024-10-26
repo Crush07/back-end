@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bf3871-fa61-4617-aee1-7126e15f1db5" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../redis/springboot+redis/template/src/main/java/com/hysea/controller/RedisController.java" afterDir="false" />
+    <list default="true" id="abdc005d-4631-4cc2-b863-d6e4cd76d1db" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo2 - 分数排名/src/main/java/com/hysea/entity/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../kafka/springboot+kafka/demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../kafka/springboot+kafka/demo1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hysea/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hysea/controller/RedisController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -30,17 +26,11 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\maven\maven-repository" />
         <option name="mavenHome" value="E:/maven/apache-maven-3.8.7" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="E:\maven\apache-maven-3.8.7\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="ProjectId" id="2nOL2GtxcpNM7vjVvM8RFOAOuBw" />
+  <component name="ProjectId" id="2nwUPuLWouDMNJDTOZvgwThE4h5" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -48,16 +38,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.hysea.Main" />
       <module name="template" />
       <extension name="coverage">
@@ -79,28 +64,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="33bf3871-fa61-4617-aee1-7126e15f1db5" name="变更" comment="" />
-      <created>1728838966276</created>
+      <changelist id="abdc005d-4631-4cc2-b863-d6e4cd76d1db" name="变更" comment="" />
+      <created>1729883610850</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728838966276</updated>
+      <updated>1729883610850</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/maven/maven-repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar!/com/fasterxml/jackson/databind/DeserializationContext.class</url>
-          <line>487</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/maven/maven-repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar!/com/fasterxml/jackson/databind/DeserializationContext.class</url>
-          <line>478</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

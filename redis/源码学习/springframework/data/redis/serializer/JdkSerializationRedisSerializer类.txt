@@ -1,0 +1,9 @@
+类型：		类
+父类：		RedisSerializer<Object>
+作用：		可以保留传入的Java对象类型，在Redis中存储和读取Java对象时，我们需要将对象进行序列化和反序列化。JdkSerializationRedisSerializer是Spring Framework提供的一种Redis序列化器，可以将Java对象转换为字节数组进行存储，并在需要时将字节数组转换回Java对象。
+
+
+
+
+参考文章：	https://blog.51cto.com/u_16175492/6603402
+			RedisTemplate的默认序列化器是JdkSerializationRedisSerializer		https://blog.csdn.net/swlimuhao/article/details/136418553

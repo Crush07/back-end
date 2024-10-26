@@ -1,0 +1,7 @@
+类型：		接口
+函数：		doInRedis：		调用RedisConnection对象方法
+
+
+
+
+发现位置：	org.springframework.data.redis.core.DefaultZSetOperations
