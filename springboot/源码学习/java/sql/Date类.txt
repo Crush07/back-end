@@ -1,0 +1,8 @@
+类型：		类
+父类：		java.util.Date
+作用：		构造函数传入时间戳，toString方法以日期转义格式yyyy-mm-dd格式化日期
+
+
+
+参考文章：	https://blog.51cto.com/u_16175492/6603402
+			RedisTemplate的默认序列化器是JdkSerializationRedisSerializer		https://blog.csdn.net/swlimuhao/article/details/136418553
