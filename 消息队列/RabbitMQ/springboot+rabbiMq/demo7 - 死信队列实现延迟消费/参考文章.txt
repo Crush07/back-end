@@ -1,1 +1,6 @@
-https://www.jb51.net/program/322471ngd.htm
+https://www.jb51.net/program/322471ngd.htm 没启动成功
+
+https://www.cnblogs.com/happyhuangjinjin/p/17363599.html 启动成功
+
+https://blog.csdn.net/fly_leopard/article/details/102823534		rabbitmq关于delivery_tag
+https://blog.csdn.net/weixin_44912902/article/details/130164227	订单取消场景

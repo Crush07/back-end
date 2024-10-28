@@ -6,6 +6,9 @@ spring:
     port: 5672
     username: guest
     password: guest
+    template:
+      # 必须设置成true 消息路由失败通知监听者，而不是将消息丢弃
+      mandatory: true
     #手动ACK
     listener:
       simple:
