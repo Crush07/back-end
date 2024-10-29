@@ -37,6 +37,8 @@ public class DeadConfig {
 	public Queue ttlQueue() {
 		Map<String, Object> args = deadQueueArgs();
 		// 队列设置消息过期时间 60 秒
+		args.put("x-dead-letter-exchange", "deadExchange");
+		args.put("x-dead-letter-routing-key", "deadRouting");
 		args.put("x-message-ttl", 10 * 1000);
 		return new Queue("ttlQueue", true, false, false, args);
 	}
