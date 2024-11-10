@@ -1,4 +1,4 @@
-package com.hysea.util;
+package com.hysea.scanner;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -52,16 +52,26 @@ public class MybatisTablesScanner {
         return tableNameClasses;
     }
 
-    public Set<MybatisTable> scanTablesWithTableName(String basePackageRegex) throws ClassNotFoundException {
-        Set<Class<?>> classes = scanClassesWithTableName(basePackageRegex);
+
+    public Set<Class<?>> scanClassesWithTableName(String[] basePackageRegexArray) throws ClassNotFoundException {
+        Set<Class<?>> res = new HashSet<>();
+        for (String basePackageRegex : basePackageRegexArray) {
+            res.addAll(scanClassesWithTableName(basePackageRegex));
+        }
+        return res;
+    }
+
+
+    public Set<MybatisTable> scanTablesWithTableName(String... basePackageRegexArray) throws ClassNotFoundException {
+        Set<Class<?>> classes = scanClassesWithTableName(basePackageRegexArray);
         return classes.stream().map(cls -> {
 
             MybatisTable mybatisTable = new MybatisTable();
             TableName tableName = cls.getAnnotation(TableName.class);
+
             mybatisTable.setTableName(tableName.value());
 
-            Field[] fields = cls.getFields();
-            mybatisTable.setFields(Arrays.stream(cls.getFields()).map(f -> {
+            mybatisTable.setFields(Arrays.stream(cls.getDeclaredFields()).map(f -> {
 
                 Table.Field field = new Table.Field();
                 TableField tableField = f.getAnnotation(TableField.class);

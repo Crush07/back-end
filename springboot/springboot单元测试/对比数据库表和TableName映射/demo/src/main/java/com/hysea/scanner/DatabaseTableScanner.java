@@ -1,4 +1,4 @@
-package com.hysea.util;
+package com.hysea.scanner;
 
 import com.hysea.domain.DatabaseTable;
 import com.hysea.domain.Table;
@@ -26,15 +26,16 @@ public class DatabaseTableScanner {
         try (Connection connection = DataSourceUtils.getConnection(dataSource)) {
             DatabaseMetaData metaData = connection.getMetaData();
 
+            String catalog = connection.getCatalog();
             // 获取所有表
-            try (ResultSet tablesResultSet = metaData.getTables(null, null, "%", new String[]{"TABLE"})) {
+            try (ResultSet tablesResultSet = metaData.getTables(catalog, null, "%", new String[]{"TABLE"})) {
                 while (tablesResultSet.next()) {
                     String tableName = tablesResultSet.getString("TABLE_NAME");
                     DatabaseTable databaseTable = new DatabaseTable();
                     databaseTable.setTableName(tableName);
 
                     // 获取每个表的字段
-                    try (ResultSet columnsResultSet = metaData.getColumns(null, null, tableName, "%")) {
+                    try (ResultSet columnsResultSet = metaData.getColumns(catalog, null, tableName, "%")) {
                         while (columnsResultSet.next()) {
                             String columnName = columnsResultSet.getString("COLUMN_NAME");
                             Table.Field field = new Table.Field(columnName);
