@@ -1,0 +1,10 @@
+com\hysea\Main.class
+com\hysea\domain\MybatisTable.class
+com\hysea\dept\domain\Student.class
+com\hysea\scanner\TableOfDatabaseAndMybatisDiffScanner.class
+com\hysea\domain\DatabaseTable.class
+com\hysea\user\domain\SysUser.class
+com\hysea\domain\Table$Field.class
+com\hysea\scanner\DatabaseTableScanner.class
+com\hysea\scanner\MybatisTablesScanner.class
+com\hysea\domain\Table.class

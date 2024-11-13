@@ -6,7 +6,7 @@
 
     <groupId>com.hysea.scanner</groupId>
     <artifactId>hyseaScanner</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.3.2</version>
+            <version>3.4.0</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>

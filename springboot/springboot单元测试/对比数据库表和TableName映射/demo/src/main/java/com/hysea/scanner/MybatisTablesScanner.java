@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -61,6 +62,10 @@ public class MybatisTablesScanner {
         return res;
     }
 
+    String extractField(String field){
+        field = field.replace("`", "");
+        return field;
+    }
 
     public Set<MybatisTable> scanTablesWithTableName(String... basePackageRegexArray) throws ClassNotFoundException {
         Set<Class<?>> classes = scanClassesWithTableName(basePackageRegexArray);
@@ -75,18 +80,26 @@ public class MybatisTablesScanner {
 
                 Table.Field field = new Table.Field();
                 TableField tableField = f.getAnnotation(TableField.class);
+
                 if(tableField != null){
-                    field.setFieldName(tableField.value());
+                    if(!tableField.exist()){
+                        return null;
+                    }
+                    field.setFieldName(extractField(tableField.value()));
                 }
 
                 TableId tableId = f.getAnnotation(TableId.class);
                 if(tableId != null){
-                    field.setFieldName(tableId.value());
+                    field.setFieldName(extractField(tableId.value()));
+                }
+
+                if(field.getFieldName() == null){
+                    return null;
                 }
 
                 return field;
 
-            }).collect(Collectors.toList()));
+            }).filter(Objects::nonNull).collect(Collectors.toList()));
             return mybatisTable;
         }).collect(Collectors.toSet());
 
