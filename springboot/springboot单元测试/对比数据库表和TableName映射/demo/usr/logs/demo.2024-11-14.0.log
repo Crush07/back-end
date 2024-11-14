@@ -669,3 +669,514 @@ Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO�
 Hysea 01:28:22.925 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 Hysea 01:28:22.925 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 Hysea 01:28:22.936 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 11:59:47.199 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 11:59:47.206 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 11:59:47.207 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 11:59:47.295 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 11:59:47.393 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 11:59:47.411 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@132ddbab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@297ea53a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@acb0951, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bf22f18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@267f474e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a7471ce, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28276e50, org.springframework.test.context.event.EventPublishingTestExecutionListener@62e70ea3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3efe7086, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@675d8c96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@741b3bc3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ed3b1f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63648ee9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@68d6972f]
+Hysea 11:59:47.740 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on AYI-20210511MWM with PID 29628 (started by Administrator in D:\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 11:59:47.741 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 11:59:48.370 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 11:59:48.981 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 11:59:49.306 [main] WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+Hysea 11:59:49.306 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 11:59:49.315 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Hysea 11:59:49.320 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 84 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:460)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:431)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:628)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca$$FastClassBySpringCGLIB$$a93a54be.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 85 common frames omitted
+Hysea 11:59:49.323 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@132ddbab] to prepare test instance [com.hysea.DatabaseAndMybatisTableDiffTest@3e046e39]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 65 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 84 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [mybatis/mybatis-config.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:460)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:431)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:628)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca$$FastClassBySpringCGLIB$$a93a54be.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d74f90ca.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 85 common frames omitted
+Hysea 12:00:05.991 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 12:00:05.996 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 12:00:05.996 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 12:00:06.081 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 12:00:06.166 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 12:00:06.179 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@132ddbab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@297ea53a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@acb0951, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bf22f18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@267f474e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a7471ce, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28276e50, org.springframework.test.context.event.EventPublishingTestExecutionListener@62e70ea3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3efe7086, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@675d8c96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@741b3bc3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ed3b1f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63648ee9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@68d6972f]
+Hysea 12:00:06.456 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on AYI-20210511MWM with PID 26868 (started by Administrator in D:\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 12:00:06.457 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 12:00:06.963 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 12:00:07.482 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 12:00:08.198 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 1.984 seconds (JVM running for 2.801)
+Hysea 12:00:11.652 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 12:00:12.800 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at com.hysea.scanner.DatabaseTableScanner.getAllTables(DatabaseTableScanner.java:29)
+	at com.hysea.scanner.TableOfDatabaseAndMybatisDiffScanner.getDiff(TableOfDatabaseAndMybatisDiffScanner.java:45)
+	at com.hysea.DatabaseAndMybatisTableDiffTest.getDiff(DatabaseAndMybatisTableDiffTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Hysea 12:00:12.819 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 12:00:45.383 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 12:00:45.387 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 12:00:45.388 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 12:00:45.468 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 12:00:45.537 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 12:00:45.549 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@132ddbab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@297ea53a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@acb0951, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bf22f18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@267f474e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a7471ce, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28276e50, org.springframework.test.context.event.EventPublishingTestExecutionListener@62e70ea3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3efe7086, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@675d8c96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@741b3bc3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ed3b1f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63648ee9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@68d6972f]
+Hysea 12:00:45.819 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on AYI-20210511MWM with PID 32420 (started by Administrator in D:\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 12:00:45.819 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 12:00:46.298 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 12:00:46.848 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 12:00:47.555 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 1.975 seconds (JVM running for 2.764)
+Hysea 12:00:51.101 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 12:00:51.229 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 12:00:51.603 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 12:00:51.604 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象缺失：
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_option"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_file"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dept"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_course"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_to"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave_meal"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project"表的PO对象。
+Hysea 12:00:51.604 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_area"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_dept_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_score_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_situation"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receive"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_semester"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_menu"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_click_function"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_dept"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_menu"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_level"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_dept"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_contract"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_monitoring_task"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_bind_dept_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_general_score_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score_type"表的PO对象。
+Hysea 12:00:51.605 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_type"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_course_time"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval_type"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_turn"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_file"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_semester"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_receiver_operate"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon_type"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_rest"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract_function"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_2"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_role"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_type"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_school_area"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_post"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard"表的PO对象。
+Hysea 12:00:51.606 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state_count"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_repair"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper_topic"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_semester"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_history"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_dimension"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_rule_item"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_evaluation"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_operate"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_subject_relationship"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label_default"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_deposit"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_check"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_function"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_function"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_weixin_notice"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_notice_receiver_option"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dimension"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_dept_selector"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_evaluation"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_type"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_type"表的PO对象。
+Hysea 12:00:51.607 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_topic"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_template"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_folder"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_menu_form"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_have_dept_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_situation"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_notice_receiver_operate"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_post"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_dept"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_param"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_real_dept_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_router"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_option"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_manual"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher_2"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_clock_in"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_subject_score_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_bind_type"表的PO对象。
+Hysea 12:00:51.608 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_type_project"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_click_function"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_teacher"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_dept_type"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_identity"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_rest"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_dept_level"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_dept"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score_type"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type_menu"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_history"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_cos"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_model"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template_data"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_type"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_parent"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_student_number"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_exception"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_level"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_book_page"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content_type"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_logininfor"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_wechat_user"表的PO对象。
+Hysea 12:00:51.609 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_option"表的PO对象。
+Hysea 12:00:51.610 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension_project"表的PO对象。
+Hysea 12:00:51.610 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 12:00:51.610 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表缺失字段：
+Hysea 12:00:51.610 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`account`字段。
+Hysea 12:00:51.610 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`username`字段。
+Hysea 12:00:51.610 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"PO对象缺失字段：
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`salt`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`user_name`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`phonenumber`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_date`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`remark`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`avatar`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_ip`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`create_by`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_name`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`update_by`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`email`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`status`字段。
+Hysea 12:00:51.611 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"PO对象缺失字段：
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`update_time`字段。
+Hysea 12:00:51.611 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`create_time`字段。
+Hysea 12:00:51.631 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 12:00:51.632 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 12:00:51.640 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

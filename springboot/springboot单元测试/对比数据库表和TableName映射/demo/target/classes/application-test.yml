@@ -10,15 +10,13 @@ spring:
 #    url: jdbc:mysql://localhost:3306/medical_treatment?useSSL=false&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
 #    username: root
 #    password: 123456
-    url: jdbc:mysql://localhost:3306/moral_education?useSSL=false&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+#    url: jdbc:mysql://localhost:3306/moral_education?useSSL=false&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 123456
+    url: jdbc:mysql://192.168.10.13:3306/moral_education?useSSL=false&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
 
-mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
-  config-location: classpath:mybatis/mybatis-config.xml
-
 hysea:
-  database: moral_education
   po:
     packages: com.hysea.*.domain

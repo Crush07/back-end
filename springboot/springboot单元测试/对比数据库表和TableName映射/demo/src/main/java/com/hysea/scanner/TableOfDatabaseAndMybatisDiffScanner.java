@@ -17,14 +17,17 @@ import java.util.stream.Collectors;
 @Slf4j
 public class TableOfDatabaseAndMybatisDiffScanner {
 
-    @Autowired
     MybatisTablesScanner mybatisTablesScanner;
 
-    @Autowired
     DatabaseTableScanner databaseTableScanner;
 
     @Value("${hysea.po.packages}")
     String packages;
+
+    public TableOfDatabaseAndMybatisDiffScanner(MybatisTablesScanner mybatisTablesScanner, DatabaseTableScanner databaseTableScanner) {
+        this.mybatisTablesScanner = mybatisTablesScanner;
+        this.databaseTableScanner = databaseTableScanner;
+    }
 
     public static Set<String> intersection(Set<String> set1, Set<String> set2) {
         return set1.stream().filter(set2::contains).collect(Collectors.toSet());

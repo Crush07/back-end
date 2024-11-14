@@ -1,0 +1,25 @@
+类型：		类
+函数：		registerAlias(String name, String alias)，注册别名
+		1. 获取aliasMap锁，确保aliasMap只能同时被一处代码操作
+		2. 如果传入的name和alias一致就把aliasMap中的alias的别名映射删除掉，意思就是剪断name的别名链
+		3. 如果传入的name和alias不一致就判断aliasMap中是否已经存在alias这个别名，存在就判断是否是name的别名，是就退出
+		4. 不存在就判断是否允许覆盖别名的操作
+		5. 判断是否别名链是否出现回环的情况，回环就抛出异常
+		6. 没有抛出异常就正常为name添加alias别名
+
+		allowAliasOverriding()，返回是否可以覆盖已有别名
+
+		hasAlias(String name, String alias)，返回alias是否存在在name的别名链上
+
+		removeAlias(String alias)，删除该别名，以及从alias处剪断name的别名链
+
+		isAlias(String name)，返回是否是别名
+
+		getAliases(String name)，调用retrieveAliases递归函数获取name的别名链上的所有别名
+
+		resolveAliases(StringValueResolver valueResolver)
+	
+		canonicalName(String name)，获取name的别名链上的最终别名
+
+
+发现位置		AbstractBeanFactory中的transformedBeanName的函数
