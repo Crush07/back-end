@@ -1,0 +1,12 @@
+类型：		接口
+函数：		registerSingleton(String beanName, Object singletonObject)，注册名为beanName的单例singletonObject
+
+		getSingleton(String beanName)，获取名叫beanName的单例
+
+		containsSingleton(String beanName)，是否存在beanName的单例
+
+		getSingletonNames()，返回在此注册中心中注册的单例bean的名称。
+
+		getSingletonCount()，获取单例数量
+
+		getSingletonMutex()，获取互斥锁

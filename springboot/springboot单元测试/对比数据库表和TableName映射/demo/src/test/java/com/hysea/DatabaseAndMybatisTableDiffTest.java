@@ -10,7 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 @SpringBootTest
-public class DatabaseAndMybatisTableDiffTest  implements ApplicationContextAware {
+public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware {
 
     ApplicationContext applicationContext;
 

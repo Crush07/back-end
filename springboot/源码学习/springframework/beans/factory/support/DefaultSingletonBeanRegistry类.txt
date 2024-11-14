@@ -1,0 +1,17 @@
+描述：		继承了SimpleAliasRegistry（简单别名注册中心）类，实现了SingletonBeanRegistry（单例注册中心）接口，类名是默认单例注册中心
+类型：		类
+函数：		registerSingleton(String beanName, Object singletonObject)
+		1. 先获取singletonObjects（单例对象Map）同步锁
+		2. 从singletonObjects获取名为beanName的对象
+		3. 获取的对象不为空报错
+		4. 获取的对象为空调用addSingleton(String beanName, Object singletonObject)添加该单例对象：
+		
+		addSingleton(String beanName, Object singletonObject)
+		1. 先获取singletonObjects（单例对象Map）同步锁
+		2. 往singletonObjects中put(baseName, singletonObject)
+		3. 删除singletonFactories单例参数map中的baseName的参数
+		4. this.earlySingletonObjects.remove(beanName)
+		5. this.registeredSingletons.add(beanName)
+
+
+		getSingleton(String beanName, boolean allowEarlyReference)
