@@ -1,0 +1,671 @@
+HySea 2024-11-14 00:56:20.006[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.buildDefaultMergedContextConfiguration:[33m308[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.013[main][[34mINFO[0;39m][[32morg.springframework.test.context.support.AbstractContextLoader[0;39m.generateDefaultLocations:[33m264[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.014[main][[34mINFO[0;39m][[32morg.springframework.test.context.support.AnnotationConfigContextLoaderUtils[0;39m.detectDefaultConfigurationClasses:[33m83[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.127[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getOrFindConfigurationClasses:[33m237[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.248[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getDefaultTestExecutionListenerClassNames:[33m248[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.270[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getTestExecutionListeners:[33m177[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.542[main][[1;31mERROR[0;39m][[32morg.springframework.boot.SpringApplication[0;39m.reportFailure:[33m837[0;39m] java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b809711 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b809711 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b0f7d9d - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b0f7d9d - [mycon] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+- %PARSER_ERROR[mycon] 
+HySea 2024-11-14 00:56:20.543[main][[1;31mERROR[0;39m][[32morg.springframework.test.context.TestContextManager[0;39m.prepareTestInstance:[33m248[0;39m] java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b809711 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b809711 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b0f7d9d - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3b0f7d9d - [mycon] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+- %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.121[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.buildDefaultMergedContextConfiguration:[33m308[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.127[main][[34mINFO[0;39m][[32morg.springframework.test.context.support.AbstractContextLoader[0;39m.generateDefaultLocations:[33m264[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.128[main][[34mINFO[0;39m][[32morg.springframework.test.context.support.AnnotationConfigContextLoaderUtils[0;39m.detectDefaultConfigurationClasses:[33m83[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.231[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getOrFindConfigurationClasses:[33m237[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.344[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getDefaultTestExecutionListenerClassNames:[33m248[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.366[main][[34mINFO[0;39m][[32morg.springframework.boot.test.context.SpringBootTestContextBootstrapper[0;39m.getTestExecutionListeners:[33m177[0;39m] - %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.671[main][[1;31mERROR[0;39m][[32morg.springframework.boot.SpringApplication[0;39m.reportFailure:[33m837[0;39m] java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - [mycon] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:321)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - [mycon] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+- %PARSER_ERROR[mycon] 
+HySea 2024-11-14 01:01:13.672[main][[1;31mERROR[0;39m][[32morg.springframework.test.context.TestContextManager[0;39m.prepareTestInstance:[33m248[0;39m] java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+Caused by: java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - [mycon] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:321)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@329dbdbf - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7f8a9499 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2f6bbeb0 - [mycon] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - Failed to instantiate converter class [org.demo.annotation.convert.LogabckMessageConverter] for keyword [mycon] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.demo.annotation.convert.LogabckMessageConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@1b1637e1 - [mycon] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+- %PARSER_ERROR[mycon] 
+01:05:33.506 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+01:05:33.512 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:05:33.512 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:05:33.622 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+01:05:33.737 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+01:05:33.758 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73c60324, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71ae31b0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ba534b0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f0ca692, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c104774, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cb3d0f7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e517165, org.springframework.test.context.event.EventPublishingTestExecutionListener@44e3760b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6a66a204, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5860f3d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d7f7be7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42f3156d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ddae9b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@427b5f92]
+01:05:34.169 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 18728 (started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+01:05:34.170 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+01:05:34.781 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea]' package. Please check your configuration.
+01:05:35.350 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01:05:36.511 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 2.705 seconds (JVM running for 3.784)
+01:05:40.410 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:05:40.548 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:05:41.107 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+01:05:41.107 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象缺失：
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_option"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_file"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dept"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_to"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave_meal"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_area"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_dept_type"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_score_type"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_type"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract"表的PO对象。
+01:05:41.108 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_situation"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receive"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_semester"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_menu"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_click_function"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_dept"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_menu"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_level"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_dept"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_contract"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_monitoring_task"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_bind_dept_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_general_score_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_course_time"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval_type"表的PO对象。
+01:05:41.109 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_file"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_semester"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_receiver_operate"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon_type"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_rest"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract_function"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_2"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_role"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_type"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_school_area"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_post"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state_count"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_repair"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper_topic"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_semester"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_history"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_dimension"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score"表的PO对象。
+01:05:41.110 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_rule_item"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_evaluation"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_operate"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_subject_relationship"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label_default"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_deposit"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_check"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_function"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_function"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_weixin_notice"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_notice_receiver_option"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dimension"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_dept_selector"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_evaluation"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_topic"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_template"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_folder"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_menu_form"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_have_dept_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_situation"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_notice_receiver_operate"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_post"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_dept"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_param"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_real_dept_type"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_router"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_option"表的PO对象。
+01:05:41.111 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_manual"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher_2"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_clock_in"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_subject_score_type"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_bind_type"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_type_project"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_click_function"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_teacher"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_dept_type"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_identity"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_rest"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_dept_level"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_dept"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score_type"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type_menu"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_history"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_cos"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_model"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template_data"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_type"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_parent"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_student_number"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_exception"表的PO对象。
+01:05:41.113 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_level"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_book_page"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content_type"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_logininfor"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_wechat_user"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_option"表的PO对象。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension_project"表的PO对象。
+01:05:41.114 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+01:05:41.114 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表缺失字段：
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`account`字段。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`username`字段。
+01:05:41.114 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"PO对象缺失字段：
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`salt`字段。
+01:05:41.114 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`user_name`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`phonenumber`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_date`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`remark`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`avatar`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_ip`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`create_by`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_name`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`update_by`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`email`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`status`字段。
+01:05:41.115 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"PO对象缺失字段：
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`update_time`字段。
+01:05:41.115 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`create_time`字段。
+01:05:41.138 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01:05:41.138 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:05:41.149 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 01:06:35.065 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 01:06:35.071 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 01:06:35.071 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 01:06:35.168 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 01:06:35.255 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 01:06:35.275 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73c60324, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71ae31b0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ba534b0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f0ca692, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c104774, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cb3d0f7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e517165, org.springframework.test.context.event.EventPublishingTestExecutionListener@44e3760b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6a66a204, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5860f3d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d7f7be7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42f3156d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ddae9b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@427b5f92]
+Hysea 01:06:35.671 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 21528 (started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:06:35.672 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 01:06:36.270 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea]' package. Please check your configuration.
+Hysea 01:06:36.803 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:06:37.920 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 2.593 seconds (JVM running for 3.682)
+Hysea 01:06:41.244 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 01:06:41.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 01:06:41.895 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 01:06:41.895 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象缺失：
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_option"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_file"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dept"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_to"表的PO对象。
+Hysea 01:06:41.895 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave_meal"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_area"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_dept_type"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_score_type"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_type"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_situation"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receive"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_semester"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_menu"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_click_function"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_dept"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_menu"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_level"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_dept"表的PO对象。
+Hysea 01:06:41.897 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_contract"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_monitoring_task"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_bind_dept_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_general_score_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_course_time"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_file"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_semester"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_receiver_operate"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_rest"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract_function"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_2"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_role"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_type"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_school_area"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_post"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state_count"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_repair"表的PO对象。
+Hysea 01:06:41.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper_topic"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_semester"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_history"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_dimension"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_rule_item"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_evaluation"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_operate"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_subject_relationship"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label_default"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_deposit"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_check"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_function"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_function"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_weixin_notice"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_notice_receiver_option"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dimension"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_dept_selector"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_evaluation"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_topic"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_template"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_folder"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_menu_form"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_have_dept_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_situation"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_notice_receiver_operate"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_post"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_dept"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option_type"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_param"表的PO对象。
+Hysea 01:06:41.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_real_dept_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_router"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_option"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_manual"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher_2"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_clock_in"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_subject_score_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_bind_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_type_project"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_click_function"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_teacher"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_dept_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_identity"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_rest"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_dept_level"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_dept"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type_menu"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_history"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_cos"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_model"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template_data"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_type"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_parent"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_student_number"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_exception"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_level"表的PO对象。
+Hysea 01:06:41.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_book_page"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content_type"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_logininfor"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_wechat_user"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_option"表的PO对象。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension_project"表的PO对象。
+Hysea 01:06:41.901 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 01:06:41.901 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表缺失字段：
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`account`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`username`字段。
+Hysea 01:06:41.901 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"PO对象缺失字段：
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`salt`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`user_name`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`phonenumber`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_date`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`remark`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`avatar`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_ip`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`create_by`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_name`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`update_by`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`email`字段。
+Hysea 01:06:41.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`status`字段。
+Hysea 01:06:41.901 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"PO对象缺失字段：
+Hysea 01:06:41.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`update_time`字段。
+Hysea 01:06:41.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`create_time`字段。
+Hysea 01:06:41.923 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 01:06:41.925 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 01:06:41.935 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 01:24:49.549 [main] INFO  com.hysea.Main - Starting Main on Hyc with PID 32156 (D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo\target\classes started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:24:49.551 [main] INFO  com.hysea.Main - The following profiles are active: test
+Hysea 01:24:51.094 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9102 (http)
+Hysea 01:24:51.104 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9102"]
+Hysea 01:24:51.104 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+Hysea 01:24:51.104 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+Hysea 01:24:51.186 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+Hysea 01:24:51.186 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1571 ms
+Hysea 01:24:52.188 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:24:52.340 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9102"]
+Hysea 01:24:52.364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9102 (http) with context path ''
+Hysea 01:24:52.375 [main] INFO  com.hysea.Main - Started Main in 3.242 seconds (JVM running for 3.754)
+Hysea 01:25:01.217 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 01:25:01.224 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 01:25:01.225 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 01:25:01.342 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 01:25:01.446 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 01:25:01.472 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3383649e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10fde30a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f27ea3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ce61929, org.springframework.test.context.support.DirtiesContextTestExecutionListener@346939bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4bf3798b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58670130, org.springframework.test.context.event.EventPublishingTestExecutionListener@74e47444, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9bd0fa6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59d2103b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39dcf4b0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e4de19b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f6c03cb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46f699d5]
+Hysea 01:25:01.859 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 23832 (started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:25:01.859 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 01:25:03.787 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:25:04.070 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 2.551 seconds (JVM running for 3.593)
+Hysea 01:25:07.690 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 01:25:07.837 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 01:25:07.938 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 01:25:07.939 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 01:25:07.948 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 01:26:48.389 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 01:26:52.448 [main] INFO  com.hysea.Main - Starting Main on Hyc with PID 27788 (D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo\target\classes started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:26:52.449 [main] INFO  com.hysea.Main - The following profiles are active: test
+Hysea 01:26:53.868 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9102 (http)
+Hysea 01:26:53.879 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9102"]
+Hysea 01:26:53.879 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+Hysea 01:26:53.879 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+Hysea 01:26:53.959 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+Hysea 01:26:53.959 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1459 ms
+Hysea 01:26:54.889 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:26:55.042 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9102"]
+Hysea 01:26:55.066 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9102 (http) with context path ''
+Hysea 01:26:55.075 [main] INFO  com.hysea.Main - Started Main in 3.009 seconds (JVM running for 3.491)
+Hysea 01:27:19.675 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 01:27:19.681 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 01:27:19.682 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 01:27:19.781 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 01:27:19.898 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 01:27:19.924 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3383649e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10fde30a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f27ea3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ce61929, org.springframework.test.context.support.DirtiesContextTestExecutionListener@346939bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4bf3798b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58670130, org.springframework.test.context.event.EventPublishingTestExecutionListener@74e47444, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9bd0fa6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59d2103b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39dcf4b0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e4de19b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f6c03cb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46f699d5]
+Hysea 01:27:20.329 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 4280 (started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:27:20.330 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 01:27:22.403 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:27:22.678 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 2.7 seconds (JVM running for 3.728)
+Hysea 01:27:26.174 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 01:27:26.315 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 01:27:26.408 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 01:27:26.408 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 01:27:26.415 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 01:28:16.347 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 01:28:16.354 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 01:28:16.355 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 01:28:16.450 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 01:28:16.540 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 01:28:16.559 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3383649e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10fde30a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f27ea3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ce61929, org.springframework.test.context.support.DirtiesContextTestExecutionListener@346939bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4bf3798b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58670130, org.springframework.test.context.event.EventPublishingTestExecutionListener@74e47444, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9bd0fa6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59d2103b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39dcf4b0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e4de19b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f6c03cb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46f699d5]
+Hysea 01:28:16.919 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 33312 (started by 23507 in D:\study\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 01:28:16.919 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 01:28:18.850 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 01:28:19.150 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 2.544 seconds (JVM running for 3.528)
+Hysea 01:28:22.598 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 01:28:22.739 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 01:28:22.898 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 01:28:22.898 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象缺失：
+Hysea 01:28:22.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_option"表的PO对象。
+Hysea 01:28:22.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_file"表的PO对象。
+Hysea 01:28:22.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test"表的PO对象。
+Hysea 01:28:22.898 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dept"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_to"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave_meal"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_area"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_dept_type"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_score_type"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_type"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_situation"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receive"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_semester"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_menu"表的PO对象。
+Hysea 01:28:22.899 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_click_function"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_dept"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_menu"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_level"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_dept"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_contract"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_monitoring_task"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_bind_dept_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_general_score_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_test_subject_subject_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_course_time"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval_type"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_file"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_semester"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector"表的PO对象。
+Hysea 01:28:22.900 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_time_interval"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_receiver_operate"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_icon_type"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_rest"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_contract_function"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_2"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_role"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_seat_table_type"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_school_area"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_post"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state_count"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_repair"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_paper_topic"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_semester"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_read_history"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_dimension"表的PO对象。
+Hysea 01:28:22.901 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_score"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option_rule_item"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_evaluation"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_operate"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_user_subject_relationship"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label_default"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_deposit"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_check"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_function"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_function"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_weixin_notice"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_notice_receiver_option"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_standard_dimension"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_dept_selector"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_evaluation"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_type"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_type"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_state"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_topic"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_template"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_file_folder"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_menu_form"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_have_dept_type"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship"表的PO对象。
+Hysea 01:28:22.902 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_relationship_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_situation"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_notice_receiver_operate"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_post"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance_dept"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_receiver_option_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_param"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_real_dept_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_router"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_selector_option"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_manual"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_duty_group_teacher_2"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_clock_in"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_subject_score_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_bind_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_application_for_leave"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_type_project"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_click_function"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_option"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_record_teacher"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_notice_type_dept_type"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_user_identity"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_work_attendance"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_rest"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_role_dept_level"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_folder_dept"表的PO对象。
+Hysea 01:28:22.903 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_subject_score_type"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_type_menu"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_history"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_cos"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_model"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_template_data"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"notice_mode"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_evaluation_type"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_dept_parent"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dept_student_number"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_request_exception"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_level"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_book_page"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_general_content_type"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_form_label"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"sys_logininfor"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_wechat_user"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_project_option"表的PO对象。
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - 未定义"me_dimension_project"表的PO对象。
+Hysea 01:28:22.904 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 01:28:22.904 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表缺失字段：
+Hysea 01:28:22.904 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`account`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"表不存在`username`字段。
+Hysea 01:28:22.905 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"PO对象缺失字段：
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`salt`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`user_name`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`phonenumber`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_date`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`remark`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`avatar`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_ip`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`create_by`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`login_name`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`update_by`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`email`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"sys_user"表的`status`字段。
+Hysea 01:28:22.905 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"PO对象缺失字段：
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`update_time`字段。
+Hysea 01:28:22.905 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO对象未定义"me_student"表的`create_time`字段。
+Hysea 01:28:22.925 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 01:28:22.925 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 01:28:22.936 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

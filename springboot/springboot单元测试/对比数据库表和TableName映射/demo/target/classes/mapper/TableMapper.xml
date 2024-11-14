@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hysea.scanner.mapper.TableMapper">
+
+    <select id="selectTableNameList" resultMap="Table">
+        select table_name, #{baseName} base_name from information_schema.tables
+        where table_schema = #{baseName}
+    </select>
+
+    <select id="selectField" resultMap="Field">
+        select column_name
+        from information_schema.columns
+        where table_schema = #{baseName}
+        and table_name = #{tableName}
+    </select>
+
+    <resultMap id="Table" type="com.hysea.scanner.domain.DatabaseTable">
+        <result column="table_name" property="tableName"/>
+        <collection property="fields" column="{baseName=base_name,tableName=table_name}" javaType="java.util.ArrayList" select="com.hysea.scanner.mapper.TableMapper.selectField" />
+    </resultMap>
+
+    <resultMap id="Field" type="com.hysea.scanner.domain.Table$Field">
+        <result column="column_name" property="fieldName"/>
+    </resultMap>
+
+</mapper>

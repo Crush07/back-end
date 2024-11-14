@@ -1,4 +1,4 @@
-package com.hysea.domain;
+package com.hysea.scanner.domain;
 
 import java.util.List;
 

@@ -1,8 +1,9 @@
 package com.hysea.scanner;
 
-import com.hysea.domain.DatabaseTable;
-import com.hysea.domain.MybatisTable;
-import com.hysea.domain.Table;
+import com.hysea.scanner.domain.DatabaseTable;
+import com.hysea.scanner.domain.MybatisTable;
+import com.hysea.scanner.domain.Table;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -10,13 +11,11 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 @Component
+@Slf4j
 public class TableOfDatabaseAndMybatisDiffScanner {
-
-    private static final Logger logger = Logger.getLogger(TableOfDatabaseAndMybatisDiffScanner.class.getName());
 
     @Autowired
     MybatisTablesScanner mybatisTablesScanner;
@@ -24,7 +23,7 @@ public class TableOfDatabaseAndMybatisDiffScanner {
     @Autowired
     DatabaseTableScanner databaseTableScanner;
 
-    @Value("hysea.po.packages")
+    @Value("${hysea.po.packages}")
     String packages;
 
     public static Set<String> intersection(Set<String> set1, Set<String> set2) {
@@ -55,11 +54,12 @@ public class TableOfDatabaseAndMybatisDiffScanner {
             for (String mybatisTableName : mybatisTableNameSet) {
                 if (!tablesIntersection.contains(mybatisTableName)) {
                     if (isFirst) {
-                        logger.info("------");
-                        logger.info("表缺失：");
+
+                        log.info("------");
+                        log.info("表缺失：");
                         isFirst = false;
                     }
-                    logger.warning("数据库不存在\"" + mybatisTableName + "\"表。");
+                    log.warn("数据库不存在\"{}\"表。",mybatisTableName);
                     diffCount++;
                 }
             }
@@ -70,11 +70,11 @@ public class TableOfDatabaseAndMybatisDiffScanner {
             for (String databaseTableName : databaseTableNameSet) {
                 if (!tablesIntersection.contains(databaseTableName)) {
                     if (isFirst) {
-                        logger.info("------");
-                        logger.info("PO对象缺失：");
+                        log.info("------");
+                        log.info("PO对象缺失：");
                         isFirst = false;
                     }
-                    logger.warning("未定义\"" + databaseTableName + "\"表的PO对象。");
+                    log.warn("未定义\"{}\"表的PO对象。",databaseTableName);
                     diffCount++;
                 }
             }
@@ -94,11 +94,11 @@ public class TableOfDatabaseAndMybatisDiffScanner {
                 for (String mybatisTableField : mybatisTableFieldSet) {
                     if (!fieldIntersection.contains(mybatisTableField)) {
                         if (isFirst) {
-                            logger.info("------");
-                            logger.info("\"" + tableName + "\"表缺失字段：");
+                            log.info("------");
+                            log.info("\"{}\"表缺失字段：",tableName);
                             isFirst = false;
                         }
-                        logger.warning("\"" + tableName + "\"表不存在`" + mybatisTableField + "`字段。");
+                        log.warn("\"{}\"表不存在`{}`字段。",tableName,mybatisTableField);
                         diffCount++;
                     }
                 }
@@ -110,10 +110,10 @@ public class TableOfDatabaseAndMybatisDiffScanner {
                 for (String databaseTableField : databaseTableFieldSet) {
                     if (!fieldIntersection.contains(databaseTableField)) {
                         if (isFirst) {
-                            logger.info("\"" + tableName + "\"PO对象缺失字段：");
+                            log.info("\"{}\"PO对象缺失字段：",tableName);
                             isFirst = false;
                         }
-                        logger.warning("PO对象未定义\"" + tableName + "\"表的`" + databaseTableField + "`字段。");
+                        log.warn("PO对象未定义\"{}\"表的`{}`字段。",tableName,databaseTableField);
                         diffCount++;
                     }
                 }
