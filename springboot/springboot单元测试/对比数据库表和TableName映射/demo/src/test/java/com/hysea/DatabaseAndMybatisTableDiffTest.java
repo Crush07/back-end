@@ -9,6 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+import java.util.function.Predicate;
+
 @SpringBootTest
 public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware {
 
@@ -24,6 +26,7 @@ public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware 
 
     @Test
     public void getDiff() throws ClassNotFoundException {
-        assert tableOfDatabaseAndMybatisDiffScanner.getDiff() == 0;
+        Predicate<Integer> predicate = count-> count == 0;
+        assert predicate.test(tableOfDatabaseAndMybatisDiffScanner.getDiff());
     }
 }

@@ -14,4 +14,30 @@
 		5. this.registeredSingletons.add(beanName)
 
 
-		getSingleton(String beanName, boolean allowEarlyReference)
+		getSingleton(String beanName)，调用getSingleton(beanName,ture)
+
+		getSingleton(String beanName, boolean allowEarlyReference)，获取单例对象
+
+		isDependent(String beanName, String dependentBeanName)，判断dependentBeanName的bean是否依赖于beanName的bean，通过递归调用isDependent(beanName, dependentBeanName, null)实现
+
+		isDependent(String beanName, String dependentBeanName, @Nullable Set<String> alreadySeen)
+		1. 递归调用过程中，如果发现beanName的某个依赖分支上出现循环依赖的情况返回false
+		2. 从dependentBeanMap（依赖BeanMap）中获取beanName的bean，如果为空，返回false
+		3. 如果有该beanName有依赖的bean，则判断这些bean中是否包含dependentBeanName的bean
+		4. 如果没有则遍历这些bean，判断这些bean是否依赖dependentBeanName的bean，并为每一个bean生成一个alreadySeen（已经出现过bean的集合），用于在每一次递归开始判断是否存在循环依赖的情况，也防止一直递归下去。
+
+		hasDependentBean(String beanName)，获取beanName的bean是否存在于depentBeanMap
+
+		getDependentBeans(String beanName)，获取所有直接依赖于beanName的bean名称
+
+		getDependenciesForBean(String beanName)，获取beanName依赖的所有bean名称
+
+		destroySingletons()，销毁所有单例
+		1. 获取singletonObjects锁，设置singletonsCurrentlyInDestruction为ture，表示正在销毁所有单例
+		2. 获取所有disposeableBean的bean名称，遍历调用destroySingleton销毁
+		3. 清空containedBeanMap、dependentBeanMap、dependenciesForBeanMap、调用clearSingletonCache()
+		
+		clearSingletonCache()，清空singletonObjects、singletonFactories、earlySingletonObjects、registeredSingletons，设置singletonsCurrentlyInDestruction为false，表示所有单例销毁完成
+
+
+可以参考文章	https://www.jb51.net/program/287727454.htm

@@ -13,7 +13,6 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-@Component
 @Slf4j
 public class TableOfDatabaseAndMybatisDiffScanner {
 
@@ -21,12 +20,12 @@ public class TableOfDatabaseAndMybatisDiffScanner {
 
     DatabaseTableScanner databaseTableScanner;
 
-    @Value("${hysea.po.packages}")
     String packages;
 
-    public TableOfDatabaseAndMybatisDiffScanner(MybatisTablesScanner mybatisTablesScanner, DatabaseTableScanner databaseTableScanner) {
+    public TableOfDatabaseAndMybatisDiffScanner(MybatisTablesScanner mybatisTablesScanner, DatabaseTableScanner databaseTableScanner, String packages) {
         this.mybatisTablesScanner = mybatisTablesScanner;
         this.databaseTableScanner = databaseTableScanner;
+        this.packages = packages;
     }
 
     public static Set<String> intersection(Set<String> set1, Set<String> set2) {
