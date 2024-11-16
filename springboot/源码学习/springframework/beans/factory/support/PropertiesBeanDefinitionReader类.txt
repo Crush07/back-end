@@ -1,0 +1,9 @@
+类型：		类
+函数：		int loadBeanDefinitions(EncodedResource encodedResource, @Nullable String prefix)，加载bean定义
+		1. 获取encodedResource的InputStream
+		2. 通过DefaultPropertiesPersister把InputStream加载到prop（Properties）中
+		3. 
+
+
+发现位置	
+

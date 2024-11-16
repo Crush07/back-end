@@ -1,0 +1,12 @@
+类型：		接口
+函数：		registerAlias(String name, String alias)，注册别名
+		
+		removeAlias(String alias)，删除该别名
+
+		isAlias(String name)，返回是否是别名
+
+		getAliases(String name)，获取name的所有别名
+
+
+
+发现位置	BeanDefinitionRegistry接口继承，SimpleAliasRegistry类实现

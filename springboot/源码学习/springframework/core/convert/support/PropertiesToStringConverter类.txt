@@ -1,0 +1,4 @@
+类型：		类，final修饰的类，不可被继承，继承了Converter<Properties, String>
+函数：		convert(Properties source)，调用source.store写入ByteArrayOutputStream流并转换为String字符串
+
+发现位置	

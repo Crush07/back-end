@@ -1,0 +1,5 @@
+类型：		接口，InputStream源头，表示只要是实现了该接口都要有获取InputStream的方法
+函数：		InputStream getInputStream()
+
+
+发现位置	被org.springframework.core.io.Resource接口继承

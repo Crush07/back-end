@@ -1,0 +1,12 @@
+类型：		类
+函数：		final BeanDefinitionRegistry getRegistry()，获取Bean定义注册中心
+		
+		String generateBeanName(BeanDefinition beanDefinition)，根据bean定义生成beanName
+
+		String registerWithGeneratedName(BeanDefinition beanDefinition)
+		1. 生成beanName
+		2. 获取BeanDefinition注册中心，并通过注册中心注册beanName的BeanDefinition对象
+		
+		
+
+理解：		

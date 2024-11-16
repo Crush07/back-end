@@ -1,0 +1,21 @@
+类型：		接口
+		BeanDefinitionRegistry getRegistry()，获取bean定义注册中心
+
+		ResourceLoader getResourceLoader()，获取（文件、类）资源加载器
+
+		ClassLoader getBeanClassLoader()，获取bean类加载器
+
+		BeanNameGenerator getBeanNameGenerator()，获取BeanName生成者
+
+		int loadBeanDefinitions(Resource resource)，通过文件资源加载Bean定义对象数量
+
+		int loadBeanDefinitions(Resource... resources)，通过文件资源数组加载Bean定义对象数量
+
+		int loadBeanDefinitions(String location)，通过资源路径加载Bean定义对象数量
+
+		int loadBeanDefinitions(String... locations)，...
+
+		
+理解：		
+
+发现位置	被AbstractBeanDefinitionReader实现，XmlBeanDefinitionReader继承AbstractBeanDefinitionReader

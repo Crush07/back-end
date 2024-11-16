@@ -1,0 +1,12 @@
+类型：		接口，资源，表示通用的资源
+函数：		boolean exists()
+
+		default boolean isReadable()
+		
+		default boolean isOpen()
+		...
+
+发现位置	
+
+
+语法		Java8新增了特性：接口可以实现方法，用default修饰，具体参考https://blog.csdn.net/2302_80329073/article/details/140688573

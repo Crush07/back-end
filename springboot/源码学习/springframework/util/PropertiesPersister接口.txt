@@ -1,0 +1,7 @@
+类型：		接口
+函数：		load(Properties props, InputStream is)，加载属性
+
+		load(Properties props, Reader reader)，加载属性
+
+
+发现位置	被DefaultPropertiesPersister继承

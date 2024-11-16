@@ -22,4 +22,4 @@
 		canonicalName(String name)，获取name的别名链上的最终别名
 
 
-发现位置		AbstractBeanFactory中的transformedBeanName的函数
+发现位置	AbstractBeanFactory中的transformedBeanName的函数

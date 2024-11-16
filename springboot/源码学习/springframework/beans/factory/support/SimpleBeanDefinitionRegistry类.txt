@@ -1,0 +1,17 @@
+类型：		类，继承SimpleAliasRegistry，实现BeanDefinitionRegistry
+函数：		void registerBeanDefinition(String beanName, BeanDefinition beanDefinition)，注册bean定义
+
+		
+		void removeBeanDefinition(String beanName)，删除bean定义，如果beanDefinitionMap没有该beanNam名称就报错
+
+		BeanDefinition getBeanDefinition(String beanName)，获取bean定义
+
+		boolean containsBeanDefinition(String beanName)，是否包含bean定义
+
+		String[] getBeanDefinitionNames()，获取所有注册的BeanDefinition的name
+		int getBeanDefinitionCount()，获取bean定义的数量
+
+		boolean isBeanNameInUse(String beanName)，如果此beanName被注册成别名或者在bean定义注册中心被注册都返回true
+
+		
+理解：		用于注册别名和bean定义的注册中心
