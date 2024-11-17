@@ -1,0 +1,23 @@
+类型：		接口
+函数		boolean containsProperty(String key)，判断是否有该属性
+
+		String getProperty(String key)，根据key获取该属性
+
+		String getProperty(String key, String defaultValue)，根据key获取该属性，如果该属性没有值则返回默认值
+		<T> T getProperty(String key, Class<T> targetType)，根据key获取该属性的目标类型的值
+
+		<T> T getProperty(String key, Class<T> targetType, T defaultValue)，...
+
+		String getRequiredProperty(String key) throws IllegalStateException，获取必须属性，在
+org.springframework.core.env.AbstractPropertyResolver实现是先调用getProperty(key)，如果结果为空，就抛出IllegalStateException异常，提示需要该属性
+
+		<T> T getRequiredProperty(String key, Class<T> valueType)，...
+
+		String resolvePlaceholders(String text)，处理占位符
+
+		String resolveRequiredPlaceholders(String text)
+
+
+理解：		
+
+发现位置	

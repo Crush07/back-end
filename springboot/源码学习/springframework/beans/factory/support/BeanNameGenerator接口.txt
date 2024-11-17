@@ -1,0 +1,7 @@
+类型：		接口
+函数		String generateBeanName(BeanDefinition definition, BeanDefinitionRegistry registry)
+		生成beanName
+
+理解：		
+
+发现位置	

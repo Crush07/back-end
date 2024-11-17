@@ -1,0 +1,70 @@
+类型：		类
+函数		public static boolean isEmpty(@Nullable Object str)，判断该对象是否为空或者是否等于空字符串
+
+		public static boolean hasText(@Nullable String str)，判断该字符串是否含有文本，以下几种情况都不符合：
+		1. str为空
+		2. str长度为0
+		3. str全部都为空字符
+
+		public static boolean containsWhitespace(@Nullable String str)，判断该字符串是否含空字符
+
+		public static String trimWhitespace(String str)，去除前后的连续空白字符串
+
+		public static String trimAllWhitespace(String str)，去除所有空白字符串
+
+		public static boolean hasLength(@Nullable String str)，判断字符串是否有长度，以下几种情况都不符合
+		1. str为空
+		2. str长度为0
+		
+		public static String trimLeadingWhitespace(String str)，去除连续空白字符串前缀
+
+		public static String trimTrailingWhitespace(String str)，去除连续空白字符串后缀
+
+		public static String trimLeadingCharacter(String str, char leadingCharacter)，去除某个连续的特定字符前缀
+		public static String trimTrailingCharacter(String str, char trailingCharacter)，去除某个连续的特定字符后缀
+		public static boolean matchesCharacter(@Nullable String str, char singleCharacter)，判断该字符串就是这个字符作为字符串，eg：
+		1. matchesCharacter("A",'A') true 
+		2. matchesCharacter("AA",'A') false 
+		3. matchesCharacter(null,'A') false
+
+		public static boolean startsWithIgnoreCase(@Nullable String str, @Nullable String prefix)，忽略大小写的情况prefix是否是str的前缀
+		public static boolean endsWithIgnoreCase(@Nullable String str, @Nullable String suffix)，忽略大小写的情况prefix是否是str的后缀
+		public static boolean substringMatch(CharSequence str, int index, CharSequence substring)，判断str的第index的位置是否存在subString该字符序列
+		public static int countOccurrencesOf(String str, String sub)，获取sub在str中的出现次数
+
+		public static String replace(String inString, String oldPattern, @Nullable String newPattern)，替换inString中的所有oldPattern为newPattern
+		public static String delete(String inString, String pattern)，删除inString中的pattern子字符串，其实就是替换inString中的所有oldPattern为""
+		public static String deleteAny(String inString, @Nullable String charsToDelete)，删除给定字符串中的任何字符
+		public static String quote(@Nullable String str)，将str用单引号包含
+		
+		public static Object quoteIfString(@Nullable Object obj)，如果是否字符串就用单引号包含
+
+		public static String unqualify(String qualifiedName)，获取qualifeiedName字符串最后一个'.'之后开始的字符串
+		public static String unqualify(String qualifiedName, char separator)，获取qualifeiedName字符串最后一个separator之后开始的字符串
+
+		public static String capitalize(String str)，调用changeFirstCharacterCase转换为首字母大写
+
+		public static String uncapitalize(String str)，调用changeFirstCharacterCase转换为首字母小写
+
+		private static String changeFirstCharacterCase(String str, boolean capitalize)，私有方法，但是特殊讲一下该函数的优化程度，如果首个字符本身就是capitalize规定的大写或小写，就返回原本字符串str不做过多处理，如果作者实现的话可能就不会考虑的这点，而无脑的将不管首字母是否和要求转换后端一致都会使用一次substring然后拼接处理
+		public static String getFilename(@Nullable String path)，获取path字符串最后一个'/'之后开始的字符串
+		public static String getFilenameExtension(@Nullable String path)，根据资源路径path获取该资源文件扩展名，有一处逻辑是如果获取到的最后一个'.'在最后一个'/'之前那么就返回null，代表没有扩展名，eg：
+		1. "abc/abc.txt" -> "txt"
+		2. "abc.ab/abc" -> null
+		
+		public static String stripFilenameExtension(String path)，去除path的扩展名
+		public static String applyRelativePath(String path, String relativePath)，将去除path最后一个'/'开始的字符串并替换为relativePath并保证拼接的时候relativePath首字符不是'/'，就让两个字符串用'/'分隔
+		public static String cleanPath(String path)
+
+		...
+
+		public static String[] delimitedListToStringArray(@Nullable String str, @Nullable String delimiter)，以特定字符串delimiter分隔的字符串数组
+		public static String[] delimitedListToStringArray(
+			@Nullable String str, @Nullable String delimiter, @Nullable String charsToDelete)，以特定字符串delimiter分隔的字符串数组，并且每个字符串元素排除charsToDelete中存在的字符
+
+		public static String[] commaDelimitedListToStringArray(@Nullable String str)，以英文逗号分隔的字符串数组
+
+		
+理解：		
+
+发现位置	

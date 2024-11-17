@@ -1,0 +1,7 @@
+类型：		接口，继承了ResourceLoader
+函数		Resource[] getResources(String locationPattern)，通过路径正则表达式获取资源数组
+
+
+发现位置	
+
+注意		ResourcePatternResolver和ResourceLoader都有CLASSPATH_ALL_URL_PREFIX，前者是classpath*:后者是classpath:，两个仅有一字之差，但是相差很多，参考https://developer.baidu.com/article/details/3234906

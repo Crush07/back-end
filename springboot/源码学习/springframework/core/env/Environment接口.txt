@@ -1,0 +1,6 @@
+类型：		接口
+函数		String[] getActiveProfiles()，获取活动配置文件
+
+理解：		
+
+发现位置	

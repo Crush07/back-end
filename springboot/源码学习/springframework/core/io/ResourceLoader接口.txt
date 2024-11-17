@@ -1,0 +1,6 @@
+类型：		接口
+函数		Resource getResource(String location)，通过路径获取资源
+
+		ClassLoader getClassLoader()，获取资源加载器使用的类加载器
+
+发现位置	

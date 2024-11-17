@@ -1,0 +1,6 @@
+类型：		接口
+函数		Environment getEnvironment()
+
+理解：		
+
+发现位置	
