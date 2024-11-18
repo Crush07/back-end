@@ -1,0 +1,18 @@
+类型：		接口
+函数		void setActiveProfiles(String... profiles)，设置配置文件
+
+		void addActiveProfile(String profile)，添加配置文件
+
+		void setDefaultProfiles(String... profiles)，设置默认配置文件
+
+		MutablePropertySources getPropertySources()，获取属性源头
+
+		Map<String, Object> getSystemProperties()，获取系统属性集
+
+		Map<String, Object> getSystemEnvironment()，获取系统环境变量
+
+		void merge(ConfigurableEnvironment parent)，合并
+
+理解：		
+
+发现位置	继承ConfigurablePropertyResolver接口

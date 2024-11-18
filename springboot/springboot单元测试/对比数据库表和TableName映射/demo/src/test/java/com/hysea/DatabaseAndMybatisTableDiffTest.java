@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.util.PathMatcher;
 
 import java.util.function.Predicate;
 
@@ -15,6 +16,9 @@ import java.util.function.Predicate;
 public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware {
 
     ApplicationContext applicationContext;
+
+    @Autowired
+    PathMatcher pathMatcher;
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -26,6 +30,20 @@ public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware 
 
     @Test
     public void getDiff() throws ClassNotFoundException {
+        System.out.println(pathMatcher);
+        {
+            boolean pattern = pathMatcher.isPattern("/dfd/ffff/{ddd}");
+            System.out.println(pattern);
+        }
+        {
+            boolean pattern = pathMatcher.isPattern("/dfd/ffff/ddd}");
+            System.out.println(pattern);
+        }
+        {
+            boolean pattern = pathMatcher.isPattern("/dfd/ffff/ddd");
+            System.out.println(pattern);
+        }
+
         Predicate<Integer> predicate = count-> count == 0;
         assert predicate.test(tableOfDatabaseAndMybatisDiffScanner.getDiff());
     }

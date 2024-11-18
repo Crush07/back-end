@@ -1,0 +1,17 @@
+类型：		接口
+函数		void setConversionService(ConfigurableConversionService conversionService)，设置解析服务
+
+		void setPlaceholderPrefix(String placeholderPrefix)，设置占位符前缀
+
+		void setPlaceholderSuffix(String placeholderSuffix)，设置占位符后缀
+
+		void setValueSeparator(@Nullable String valueSeparator)，设置值分隔符
+
+		void setIgnoreUnresolvableNestedPlaceholders(boolean ignoreUnresolvableNestedPlaceholders)，设置是否忽略不能解析的占位符
+		void setRequiredProperties(String... requiredProperties)，设置必需的属性
+
+		void validateRequiredProperties() throws MissingRequiredPropertiesException，验证必需的属性
+
+理解：		
+
+发现位置	
