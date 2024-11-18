@@ -1,0 +1,14 @@
+类型：		类
+函数：		public void setAttribute(String name, @Nullable Object value)，设置属性的值
+
+		public Object getAttribute(String name)，获取属性的值
+
+		public Object removeAttribute(String name)，移除属性
+
+		public boolean hasAttribute(String name)，是否含有该属性
+
+		protected void copyAttributesFrom(AttributeAccessor source)，复制source属性到this.attributes
+
+理解		实际就是操作LinkedHashMap
+
+发现位置		实现了AttributeAccessor接口

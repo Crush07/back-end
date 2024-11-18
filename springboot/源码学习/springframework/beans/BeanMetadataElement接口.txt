@@ -1,0 +1,5 @@
+类型：		接口
+函数：		default Object getSource()，返回此元数据元素的配置源对象
+
+
+发现位置		
