@@ -1,0 +1,56 @@
+类型：		类
+方法：		static boolean isEmpty(final CharSequence cs)，如果字符序列是null或者长度为0返回true
+
+		static boolean isNotEmpty(final CharSequence cs)，返回!isEmpty(cs)
+
+		static boolean isAnyEmpty(final CharSequence... css)，如果css的长度为0返回false，如果css有其中一个isEmpty返回false
+		static boolean isNoneEmpty(final CharSequence... css)，返回!isAnyEmpty(css)
+
+		static boolean isAllEmpty(final CharSequence... css)，如果css的长度为0返回true，遍历css如果其中一个是非空字符串（isNotEmpty）则直接返回false
+
+		static boolean isBlank(final CharSequence cs)，如果字符序列是null或者长度为0返回true，遍历字符序列如果有字符不是空白字符则返回false，如果都是空白字符返回true
+		static boolean isNotBlank(final CharSequence cs)，返回!isBlank(cs)
+
+		static boolean isAnyBlank(final CharSequence... css)，如果css的长度0返回false，遍历css如果有一个是空白字符串（isBlank）就返回true，如果都不是空白字符串则返回false
+		static boolean isNoneBlank(final CharSequence... css)，返回!isAnyBlank(css)
+	
+		static boolean isAllBlank(final CharSequence... css)，如果css的长度为0返回true，遍历css如果有一个是非空白字符串（isNotBlank）返回false，如果都是空白字符串返回true
+		
+		static String trim(final String str)，调用str.trim去除首尾空格
+
+		static String trimToNull(final String str)，如果trim(str)为null或者长度为0都返回null
+
+		static String trimToEmpty(final String str)，如果str为null返回空字符串，否则返回str.trim()
+
+		static String truncate(final String str, final int maxWidth)，返回str从下标0开始最大长度为maxWidthd的字符串
+
+		static String truncate(final String str, final int offset, final int maxWidth)，返回str从offset下标开始最大长度为maxWidth的字符串
+
+		static String stripStart(final String str, final String stripChars)
+		1. 如果stripChars为null，返回str截断空白字符前缀的字符串
+		2. 如果stripChars为空字符串，直接返回str
+		3. 否则遍历str字符判断当前字符是否是stripChars存在的字符，如果是记录截取的位置为当前字符的下一位，直至遍历到stripChars不存在的字符，返回截断后的字符串
+
+		static String stripEnd(final String str, final String stripChars)，和stripStart原理差不多
+
+		static String strip(String str, final String stripChars)，返回截断出现stripChars任何字符的前缀和出现stripChars任何字符的后缀的字符串
+
+		static String strip(final String str)，返回截断空白字符前缀和空白字符后缀的字符串
+
+		static String stripToNull(String str)，获取截断空白字符前缀和空白字符后缀的字符串，如果该截断字符串长度为0返回null，否则返回该截断字符串
+
+		static String[] stripAll(final String[] strs, final String stripChars)，就是遍历strs都调用strip(str,stripChars)截断
+
+		static String[] stripAll(final String... strs)，就是遍历strs都调用strip(str,null)截断
+		
+		static boolean equals(final CharSequence cs1, final CharSequence cs2)，对比两个字符序列的相同位置字符是否相同
+
+		static boolean equalsIgnoreCase(final CharSequence str1, final CharSequence str2)，对比两个字符序列的相同位置字符忽略大小写的情况下是否相同
+
+		static int compare(final String str1, final String str2, final boolean nullIsLess)
+		1. 如果两个字符串相等返回0
+		2. 如果nullIsLess为true，str1为null则返回-1，否则返回1
+		3. 如果nullIsLess为false，跟2相反
+		4. 比较str1和str2的字典排序，如果前者大返回比0大的正数，如果前者小返回比0小的负数
+
+		static int indexOfIgnoreCase(final CharSequence str, final CharSequence searchStr)，忽略大小写返回searchStr在str中出现的下标

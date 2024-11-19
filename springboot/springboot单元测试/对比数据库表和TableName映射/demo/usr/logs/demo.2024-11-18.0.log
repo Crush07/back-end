@@ -1,0 +1,17 @@
+Hysea 16:19:34.079 [main] INFO  com.hysea.Main - Starting Main on AYI-20210511MWM with PID 19640 (D:\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo\target\classes started by Administrator in D:\back-end\springboot\springboot单元测试\对比数据库表和TableName映射\demo)
+Hysea 16:19:34.081 [main] INFO  com.hysea.Main - The following profiles are active: test
+Hysea 16:19:34.584 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 16:19:35.019 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+Hysea 16:19:35.027 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+Hysea 16:19:35.027 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+Hysea 16:19:35.028 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+Hysea 16:19:35.028 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+Hysea 16:19:35.029 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Hysea 16:19:35.029 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+Hysea 16:19:35.032 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+Hysea 16:19:35.093 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+Hysea 16:19:35.093 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 981 ms
+Hysea 16:19:35.270 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 16:19:35.775 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+Hysea 16:19:35.790 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+Hysea 16:19:35.796 [main] INFO  com.hysea.Main - Started Main in 2.058 seconds (JVM running for 2.609)
