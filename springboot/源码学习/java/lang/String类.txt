@@ -1,0 +1,2 @@
+类型		类
+函数		public String concat(String str)，返回当前字符串拼接str的字符串

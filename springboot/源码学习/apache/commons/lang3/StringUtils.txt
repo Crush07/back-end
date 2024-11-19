@@ -54,3 +54,63 @@
 		4. 比较str1和str2的字典排序，如果前者大返回比0大的正数，如果前者小返回比0小的负数
 
 		static int indexOfIgnoreCase(final CharSequence str, final CharSequence searchStr)，忽略大小写返回searchStr在str中出现的下标
+
+		static String join(final Object[] array, final char separator, final int startIndex, final int endIndex)，返回array数组下标从startIndex到endIndex的元素用separator分隔符拼接的字符串，该方法有很多重载
+		
+		static String joinWith(final String separator, final Object... objects)，类似join方法，返回objects数组用separator字符串分隔拼接的字符串
+
+		static String deleteWhitespace(final String str)，删除str中的空白字符
+
+		static String removeStart(final String str, final String remove)，删除str的remove前缀
+
+		static String removeStartIgnoreCase(final String str, final String remove)，忽略大小写地删除remove前缀
+		
+		static String removeEnd(final String str, final String remove)，...
+
+		static String removeEndIgnoreCase(final String str, final String remove)，...
+
+		static String remove(final String str, final String remove)，删除str中出现的remove子字符串
+
+		static String removeIgnoreCase(final String str, final String remove)，...
+
+		static String remove(final String str, final char remove)，删除str中的remove字符
+
+		static String replace(final String text, final String searchString, final String replacement, final int max)，替换原字符串text中出现searchString子字符串为replacement子字符串max处，如果max为-1则全部处替换
+
+		static String replace(final String text, String searchString, final String replacement, int max, final boolean ignoreCase)，是否忽略大小写
+
+		static String replaceOnce(final String text, final String searchString, final String replacement)，更换一次
+
+		static String overlay(final String str, String overlay, int start, int end)，核心代码
+		new StringBuilder(len + start - end + overlay.length() + 1)
+            	.append(str.substring(0, start))
+            	.append(overlay)
+            	.append(str.substring(end))
+            	.toString()
+
+		static String repeat(final String str, final int repeat)，重复str字符串repeat次
+
+		static String repeat(final String str, final String separator, final int repeat)，重复str字符串repeat次，并之间添加separator分隔字符串
+		StringUtils.repeat("", "x", 3) -> "xxx"
+		StringUtils.repeat("?", ", ", 3) -> "?, ?, ?"
+
+		static String rightPad(final String str, final int size)，右边填充也就是尾部填充，保证str最小长度为size，如果不够在str尾部用空格填充直至长度为size，如果最小长度小于str本身长度，就直接返回str
+
+		static String rightPad(final String str, final int size, String padStr)，用padStr作为填充字符串
+
+		static String leftPad(final String str, final int size)，左边填充也就是头部填充
+
+		static String center(final String str, final int size)
+		StringUtils.center("ab", 4) -> " ab "
+		StringUtils.center("a", 4) -> " a  "
+
+		static String capitalize(final String str)，首字母大写
+
+		static String uncapitalize(final String str)，首字母小写
+
+		static String swapCase(final String str)，全部字符大写变小写小写变大写
+
+		static int countMatches(final CharSequence str, final CharSequence sub)，统计sub字符序列在str中出现的次数，sub是空对象或者为空字符串都返回0
+		
+		static String abbreviate(final String str, final String abbrevMarker, final int maxWidth)，省略多余的部分，用abbrevMarker替代省略部分，并保证字符串长度最大为maxWidth
+		StringUtils.abbreviate("abcdefg", "..", 4) -> "ab.."
