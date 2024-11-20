@@ -1,0 +1,26 @@
+类型		类
+方法		public static PropertyDescriptor getPropertyDescriptor(Class clazz, String propertyName)
+，获取clazz下的属性名为propertyName的PropertyDescriptor（属性描述符），PropertyDescriptor对象可以调用getReadMethod()方法获取该属性的写方法和调用getWriteMethod()获取该属性的读方法
+
+		static <T> T instantiateClass(Class<T> clazz)，实例化类
+
+		static <T> T instantiateClass(Class<?> clazz, Class<T> assignableTo)，断言assignableTo是否是clazz的超类或超接口，如果是就实例化clazz类
+
+		static <T> T instantiateClass(Constructor<T> ctor, Object... args)，有参构造方法ctor构造对象
+
+		static <T> Constructor<T> findPrimaryConstructor(Class<T> clazz)，用于查找kotlin类中的构造方法
+
+		static Method findMethod(Class<?> clazz, String methodName, Class<?>... paramTypes)，通过必要的参数查找函数（只查找本类有的函数）
+
+		static Method findDeclaredMethod(Class<?> clazz, String methodName, Class<?>... paramTypes)，通过必要的参数查找函数（如果本类没有该函数就查找超类，直到没有超类也没找到就返回null）
+		
+		static Method findMethodWithMinimalParameters(Class<?> clazz, String methodName)
+		1. 从clazz中获取参数最少的函数名为methodName的函数
+		2. 若在1.处没获取到，就从超类中获取参数最少的函数名为methodName的函数
+
+		static void copyProperties(Object source, Object target, @Nullable Class<?> editable,
+			@Nullable String... ignoreProperties)
+		1. 定义actualEditable并用target.getClass()赋值
+		2. 如果editable不是null，就判断target是否是editable的实例，如果是就将editable赋值给actualEditable
+		3. 获取actualEditable的所有PropertyDescriptor
+		4. 遍历actualEditable的所有PropertyDescriptor并且不存在ignoreProperties出现的属性名，通过source类中该属性名的读方法获取值并用editable类中该属性名的写方法复制到target
