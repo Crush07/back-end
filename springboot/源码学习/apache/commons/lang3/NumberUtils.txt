@@ -1,0 +1,53 @@
+类型：		类
+方法：		static int toInt(final String str)，将字符串转为int基元，如果转换过程中catch到异常返回默认值0
+
+		static int toInt(final String str, final int defaultValue)，将字符串转为int基元，如果转换过程中catch到异常返回默认值defaultValue
+
+		static long toLong(final String str)，...
+
+		static long toLong(final String str, final long defaultValue)，...
+
+		static float toFloat(final String str)，...
+
+		static float toFloat(final String str, final float defaultValue)，...
+
+		static double toDouble(final String str)，...
+
+		static double toDouble(final String str, final double defaultValue)，...
+
+		static byte toByte(final String str)，...
+
+		static byte toByte(final String str, final byte defaultValue)，...
+
+		static short toShort(final String str)，...
+
+		static short toShort(final String str, final short defaultValue)，...
+
+		private static String getMantissa(final String str)，获取尾数，判断str第一个字符是否是'+'或'-'，如果是则去除subString(1,str.length())
+
+		private static String getMantissa(final String str, final int stopPos)，获取尾数，判断str第一个字符是否是'+'或'-'，如果是则去除subString(1,stopPos)
+
+		private static boolean isAllZeros(final String str)
+		1. str为null返回true
+		2. str为空字符串返回false
+		3. str字符串的字符全部都是0返回true
+
+		static Float createFloat(final String str)，调用Float.valueOf(str)
+
+		static Double createDouble(final String str)，...
+
+		static Integer createInteger(final String str)，Integer.decode(str)，可以将不同进制转换为10进制
+
+		static Long createLong(final String str)，Long.decode(str)，可以将不同进制转换为10进制
+
+		static long min(final long... array)，求最小值，有重载方法
+
+		static long max(final long... array)，求最大值，有重载方法
+
+		static long min(long a, final long b, final long c)，求三个参数的最小值，有重载方法
+	
+		static long max(long a, final long b, final long c)，求三个参数的最大值，有重载方法
+
+		static boolean isDigits(final String str)，调用org.apache.commons.lang3.StringUtils.isNumeric(str)，判断所有字符是否都是数字字符	
+
+		static boolean isParsable(final String str)，判断是否是可解析的数字

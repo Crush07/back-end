@@ -114,3 +114,7 @@
 		
 		static String abbreviate(final String str, final String abbrevMarker, final int maxWidth)，省略多余的部分，用abbrevMarker替代省略部分，并保证字符串长度最大为maxWidth
 		StringUtils.abbreviate("abcdefg", "..", 4) -> "ab.."
+
+		static String defaultString(final String str)，如果str为null返回EMPTY空字符串，否则返回str
+
+		static boolean isNumeric(final CharSequence cs)，判断所有字符是否都是数字字符
