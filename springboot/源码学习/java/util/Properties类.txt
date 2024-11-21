@@ -1,0 +1,4 @@
+类型		类，继承HashMap<Object,Object>，内部还有一个Properties defaults
+方法		public synchronized Object setProperty(String key, String value)，put(key,value)
+
+		public String getProperty(String key)，如果map.get(key)为空就获取defaults.getProperty(key)，defaults可能还会有自己的defaults，递归查找Property

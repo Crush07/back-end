@@ -1,0 +1,460 @@
+Hysea 20:03:36.060 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.edu.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:03:36.074 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.edu.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:03:36.075 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.edu.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:04:11.784 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.edu.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:04:11.794 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.edu.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:04:11.796 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.edu.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:04:54.329 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.edu.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:04:54.340 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.edu.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:04:54.341 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.edu.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:05:26.314 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.edu.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:05:26.325 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.edu.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:05:26.326 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.edu.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:07:09.537 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:07:09.548 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:07:09.549 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:07:09.777 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 20:07:09.947 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 20:07:09.984 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56113384, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5669c5fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@373ebf74, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f9678e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c4ed84, org.springframework.test.context.transaction.TransactionalTestExecutionListener@189aa67a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a9d6f02, org.springframework.test.context.event.EventPublishingTestExecutionListener@362045c0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@112f364d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ccbeb64, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d9f7a80, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59252cb6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31d0e481, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3243b914]
+Hysea 20:07:10.619 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 40352 (started by 23507 in D:\study\back-end\springboot\springbootå•å…ƒæµ‹è¯•\å¯¹æ¯”æ•°æ®åº“è¡¨å’ŒTableNameæ˜ å°„\demo)
+Hysea 20:07:10.620 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 20:07:11.719 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 20:07:12.878 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 20:07:15.009 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 4.934 seconds (JVM running for 6.71)
+Hysea 20:07:22.282 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 20:07:44.491 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at com.hysea.scanner.DatabaseTableScanner.getAllTables(DatabaseTableScanner.java:28)
+	at com.hysea.scanner.TableOfDatabaseAndMybatisDiffScanner.getDiff(TableOfDatabaseAndMybatisDiffScanner.java:44)
+	at com.hysea.DatabaseAndMybatisTableDiffTest.getDiff(DatabaseAndMybatisTableDiffTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	... 49 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 52 common frames omitted
+Hysea 20:07:44.523 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 20:08:38.215 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:08:38.227 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:08:38.228 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:08:38.444 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 20:08:38.625 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 20:08:38.653 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56113384, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5669c5fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@373ebf74, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f9678e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c4ed84, org.springframework.test.context.transaction.TransactionalTestExecutionListener@189aa67a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a9d6f02, org.springframework.test.context.event.EventPublishingTestExecutionListener@362045c0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@112f364d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ccbeb64, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d9f7a80, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59252cb6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31d0e481, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3243b914]
+Hysea 20:08:39.344 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 33340 (started by 23507 in D:\study\back-end\springboot\springbootå•å…ƒæµ‹è¯•\å¯¹æ¯”æ•°æ®åº“è¡¨å’ŒTableNameæ˜ å°„\demo)
+Hysea 20:08:39.346 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 20:08:40.344 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 20:08:41.522 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 20:08:44.064 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 5.314 seconds (JVM running for 7.095)
+Hysea 20:08:51.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 20:08:52.193 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 20:08:53.801 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 20:08:53.801 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡ç¼ºå¤±ï¼š
+Hysea 20:08:53.801 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_file"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_test"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_file"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_icon"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_paper"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_standard_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_role"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.802 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_to"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_application_for_leave_meal"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_seat_table"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_project"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_area"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_project_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_test_subject_subject_score_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_test_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_contract"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.803 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_evaluation_situation"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_receive"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_semester"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_folder"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_menu"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_click_function"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_user_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_role_menu"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_general_content"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.804 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_option_level"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_seat_table_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_contract"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_request_monitoring_task"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept_bind_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_general_score_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_general_score_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_duty_group"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_test_subject_subject_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_course_time"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.806 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_time_interval_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_read_file"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_semester"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_selector"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_time_interval"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_type_receiver_operate"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_icon_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_rest"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_contract_function"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_record"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_duty_group_2"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_user_role"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.807 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_seat_table_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_school_area"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_post"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_standard"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_work_attendance_state_count"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_repair"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_paper_topic"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_semester"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_read_history"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.808 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_subject_score"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_dimension"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_general_score"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_option_rule_item"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_user_evaluation"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_receiver_operate"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_user_subject_relationship"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_form_label_default"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_deposit"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_check"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_function"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_project_function"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_weixin_notice"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_notice_receiver_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.810 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_standard_dimension"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_dept_selector"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_evaluation"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_file_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_selector_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_work_attendance_state"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_topic"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_receiver_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_template"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_file_folder"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_menu_form"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept_have_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dimension"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_relationship"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_relationship_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_situation"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_folder_notice_receiver_operate"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_evaluation"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_user_post"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_work_attendance_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.811 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_receiver_option_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_request_param"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_duty_group_teacher"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_real_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_record_router"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_template"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_selector_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_manual"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_duty_group_teacher_2"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_clock_in"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_form"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_subject_score_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_bind_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_application_for_leave"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_type_project"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_click_function"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_record_teacher"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_notice_type_dept_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_user_identity"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.812 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_work_attendance"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_request"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_rest"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_role_dept_level"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_folder_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_subject_score_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept_type_menu"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_evaluation_history"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_cos"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_model"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_template_data"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_evaluation_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_dept_parent"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dept_student_number"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.813 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_request_exception"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_level"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_book_page"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_general_content_type"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_form_label"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"sys_logininfor"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_wechat_user"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_project_option"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.814 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - æœªå®šä¹‰"me_dimension_project"è¡¨çš„POå¯¹è±¡ã€‚
+Hysea 20:08:53.816 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 20:08:53.816 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"è¡¨ç¼ºå¤±å­—æ®µï¼š
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"è¡¨ä¸å­˜åœ¨`account`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"è¡¨ä¸å­˜åœ¨`username`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"POå¯¹è±¡ç¼ºå¤±å­—æ®µï¼š
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`salt`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`user_name`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`phonenumber`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`login_date`å­—æ®µã€‚
+Hysea 20:08:53.816 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`remark`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`avatar`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`login_ip`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`create_by`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`login_name`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`update_by`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`email`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"sys_user"è¡¨çš„`status`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"POå¯¹è±¡ç¼ºå¤±å­—æ®µï¼š
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"me_student"è¡¨çš„`update_time`å­—æ®µã€‚
+Hysea 20:08:53.817 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - POå¯¹è±¡æœªå®šä¹‰"me_student"è¡¨çš„`create_time`å­—æ®µã€‚
+Hysea 20:08:53.841 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 20:08:53.843 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 20:08:53.864 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Hysea 20:09:16.801 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hysea.DatabaseAndMybatisTableDiffTest], using SpringBootContextLoader
+Hysea 20:09:16.814 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Hysea 20:09:16.815 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hysea.DatabaseAndMybatisTableDiffTest]: DatabaseAndMybatisTableDiffTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Hysea 20:09:17.031 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hysea.Main for test class com.hysea.DatabaseAndMybatisTableDiffTest
+Hysea 20:09:17.192 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Hysea 20:09:17.218 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7f6f61c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c2cc639, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ccb4b1b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4097cac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ec2cc4, org.springframework.test.context.event.EventPublishingTestExecutionListener@2a5b3fee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c1e2a2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@710b18a6]
+Hysea 20:09:17.844 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Starting DatabaseAndMybatisTableDiffTest on Hyc with PID 37748 (started by 23507 in D:\study\back-end\springboot\springbootµ¥Ôª²âÊÔ\¶Ô±ÈÊı¾İ¿â±íºÍTableNameÓ³Éä\demo)
+Hysea 20:09:17.847 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - The following profiles are active: test
+Hysea 20:09:18.930 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.hysea.*.mapper]' package. Please check your configuration.
+Hysea 20:09:20.186 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+Hysea 20:09:22.292 [main] INFO  c.h.DatabaseAndMybatisTableDiffTest - Started DatabaseAndMybatisTableDiffTest in 5.0 seconds (JVM running for 6.741)
+Hysea 20:09:30.984 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+Hysea 20:09:31.294 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Hysea 20:09:32.378 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 20:09:32.378 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÈ±Ê§£º
+Hysea 20:09:32.378 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.379 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_file"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.379 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_test"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.379 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_file"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.380 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_icon"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.380 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_paper"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.380 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_standard_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.380 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_role"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.380 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_to"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.381 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_application_for_leave_meal"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.381 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_seat_table"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.381 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_project"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.381 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_area"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.382 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_project_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.382 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_test_subject_subject_score_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.382 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_test_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.382 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_contract"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.382 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_evaluation_situation"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.383 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.383 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_receive"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.383 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_semester"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.384 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_folder"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.384 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_menu"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.384 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_click_function"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.384 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_user_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_role_menu"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_general_content"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_option_level"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_seat_table_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.385 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_contract"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_request_monitoring_task"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept_bind_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_general_score_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_general_score_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_duty_group"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.386 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_test_subject_subject_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.387 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_course_time"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.387 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_time_interval_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.387 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_read_file"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_semester"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_selector"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_time_interval"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_type_receiver_operate"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_icon_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_rest"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.388 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_contract_function"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.390 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_record"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.390 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_duty_group_2"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.390 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_user_role"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.391 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_seat_table_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.391 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_school_area"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.391 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_post"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.391 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_standard"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.391 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_work_attendance_state_count"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.392 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_repair"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.392 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_paper_topic"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.392 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.392 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_semester"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.393 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_read_history"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.393 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_subject_score"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.393 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_dimension"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.393 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_general_score"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.393 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_option_rule_item"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_user_evaluation"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_receiver_operate"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_user_subject_relationship"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_form_label_default"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_deposit"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.394 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_check"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.395 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_function"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.395 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_project_function"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.395 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_weixin_notice"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.395 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_notice_receiver_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_standard_dimension"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_dept_selector"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_evaluation"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_file_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_selector_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.396 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_work_attendance_state"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_topic"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_receiver_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_template"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_file_folder"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_menu_form"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept_have_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.397 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dimension"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_relationship"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_relationship_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_situation"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_folder_notice_receiver_operate"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_evaluation"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_user_post"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_work_attendance_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.398 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_receiver_option_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.399 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_request_param"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.399 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_duty_group_teacher"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.399 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_real_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.399 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_record_router"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.399 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_template"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_selector_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_manual"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_duty_group_teacher_2"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_clock_in"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_form"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_subject_score_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_bind_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.400 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_application_for_leave"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.401 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_type_project"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.401 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_click_function"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.401 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.401 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_record_teacher"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.401 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_notice_type_dept_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_user_identity"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_work_attendance"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_request"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_rest"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_role_dept_level"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_folder_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_subject_score_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.402 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept_type_menu"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_evaluation_history"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_cos"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_model"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_template_data"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_evaluation_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_dept_parent"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dept_student_number"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_request_exception"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_level"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.404 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_book_page"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_general_content_type"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_form_label"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"sys_logininfor"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_wechat_user"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_project_option"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.405 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - Î´¶¨Òå"me_dimension_project"±íµÄPO¶ÔÏó¡£
+Hysea 20:09:32.406 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - ------
+Hysea 20:09:32.406 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"±íÈ±Ê§×Ö¶Î£º
+Hysea 20:09:32.406 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"±í²»´æÔÚ`account`×Ö¶Î¡£
+Hysea 20:09:32.406 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"±í²»´æÔÚ`username`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "sys_user"PO¶ÔÏóÈ±Ê§×Ö¶Î£º
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`salt`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`user_name`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`phonenumber`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`login_date`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`remark`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`avatar`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`login_ip`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`create_by`×Ö¶Î¡£
+Hysea 20:09:32.407 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`login_name`×Ö¶Î¡£
+Hysea 20:09:32.408 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`update_by`×Ö¶Î¡£
+Hysea 20:09:32.408 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`email`×Ö¶Î¡£
+Hysea 20:09:32.408 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"sys_user"±íµÄ`status`×Ö¶Î¡£
+Hysea 20:09:32.408 [main] INFO  c.h.s.TableOfDatabaseAndMybatisDiffScanner - "me_student"PO¶ÔÏóÈ±Ê§×Ö¶Î£º
+Hysea 20:09:32.408 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"me_student"±íµÄ`update_time`×Ö¶Î¡£
+Hysea 20:09:32.408 [main] WARN  c.h.s.TableOfDatabaseAndMybatisDiffScanner - PO¶ÔÏóÎ´¶¨Òå"me_student"±íµÄ`create_time`×Ö¶Î¡£
+Hysea 20:09:32.429 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+Hysea 20:09:32.433 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+Hysea 20:09:32.453 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

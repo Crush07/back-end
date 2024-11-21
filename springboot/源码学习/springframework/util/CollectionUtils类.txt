@@ -1,0 +1,10 @@
+类型		类
+方法		static boolean isEmpty(@Nullable Collection<?> collection)，如果为null或者长度为0都返回true
+		
+		static boolean isEmpty(@Nullable Map<?, ?> map)，...
+
+		static List arrayToList(@Nullable Object source)，将source对象转换为List类型
+	
+		static <E> void mergeArrayIntoCollection(@Nullable Object array, Collection<E> collection)，将array对象转换为List类型，再将collection中元素添加到array中
+
+		static <K, V> void mergePropertiesIntoMap(@Nullable Properties props, Map<K, V> map)，待补充

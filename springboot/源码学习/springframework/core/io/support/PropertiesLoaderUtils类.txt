@@ -1,0 +1,18 @@
+类型		类
+方法		static Properties loadProperties(EncodedResource resource)，加载属性
+
+		static void fillProperties(Properties props, EncodedResource resource, PropertiesPersister persister)
+		1. 如果resource是xml文件，persister调用loadFromXml
+		2. 如果resource有字符集或编码属性（resource.requiresReader()）则获取InputStreamReader，并通过reader输入属性到props
+		3. 其他情况就直接获取输入流输入到props中
+		4. finally关闭stream和reader
+
+		static void fillProperties(Properties props, EncodedResource resource, PropertiesPersister persister)，new一个DefaultPropertiesPersister调用fillProperties(Properties props, EncodedResource resource, PropertiesPersister persister)	
+
+		static Properties loadProperties(Resource resource)，加载属性
+		
+		static void fillProperties(Properties props, Resource resource)，通过resource的输入流输入属性到props
+		
+		static Properties loadAllProperties(String resourceName, @Nullable ClassLoader classLoader)，new一个Properties，通过类加载器获取Resource并将属性输入到该Properties
+
+		static Properties loadAllProperties(String resourceName)，loadAllProperties(resourceName, null)

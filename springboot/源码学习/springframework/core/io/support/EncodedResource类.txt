@@ -1,0 +1,4 @@
+类型		类，实现了InputStreamSource接口，可以获取输入流
+方法		public InputStream getInputStream()，通过this.resource调用getInputStream()获取输入流，this,resource是Resource接口，该接口也实现了InputStreamSource
+		
+		public Reader getReader()，获取InputStreamReader，该提供read方法，每次读取一个字符并返回，如果没有字符就返回-1

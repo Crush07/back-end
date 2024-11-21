@@ -1,28 +1,49 @@
 package com.hysea;
 
+import com.hysea.scanner.DatabaseTableScanner;
+import com.hysea.scanner.MybatisTablesScanner;
 import com.hysea.scanner.TableOfDatabaseAndMybatisDiffScanner;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.BeansException;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-import org.springframework.util.PathMatcher;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.function.Predicate;
+import javax.sql.DataSource;
 
+@RunWith(SpringRunner.class)
 @SpringBootTest
-public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware {
-
-    ApplicationContext applicationContext;
+@Configuration
+public class DatabaseAndMybatisTableDiffTest {
 
     @Autowired
-    PathMatcher pathMatcher;
+    DataSource dataSource;
 
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
+    @Value("${hysea.po.packages}")
+    String packages;
+
+    private DatabaseTableScanner databaseTableScanner;
+
+    private MybatisTablesScanner mybatisTablesScanner;
+
+    @Bean
+    public DatabaseTableScanner databaseTableScanner(){
+        databaseTableScanner = new DatabaseTableScanner(dataSource);
+        return databaseTableScanner;
+    }
+
+    @Bean
+    public MybatisTablesScanner mybatisTablesScanner(){
+        mybatisTablesScanner = new MybatisTablesScanner();
+        return mybatisTablesScanner;
+    }
+
+    @Bean
+    public TableOfDatabaseAndMybatisDiffScanner tableOfDatabaseAndMybatisDiffScanner(){
+        return new TableOfDatabaseAndMybatisDiffScanner(mybatisTablesScanner,databaseTableScanner,packages);
     }
 
     @Autowired
@@ -30,21 +51,8 @@ public class DatabaseAndMybatisTableDiffTest implements ApplicationContextAware 
 
     @Test
     public void getDiff() throws ClassNotFoundException {
-        System.out.println(pathMatcher);
-        {
-            boolean pattern = pathMatcher.isPattern("/dfd/ffff/{ddd}");
-            System.out.println(pattern);
-        }
-        {
-            boolean pattern = pathMatcher.isPattern("/dfd/ffff/ddd}");
-            System.out.println(pattern);
-        }
-        {
-            boolean pattern = pathMatcher.isPattern("/dfd/ffff/ddd");
-            System.out.println(pattern);
-        }
 
-        Predicate<Integer> predicate = count-> count == 0;
-        assert predicate.test(tableOfDatabaseAndMybatisDiffScanner.getDiff());
+        assert tableOfDatabaseAndMybatisDiffScanner.getDiff() == 0;
+
     }
 }
